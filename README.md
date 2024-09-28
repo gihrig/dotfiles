@@ -30,7 +30,7 @@ Neovim.
 
 ### The `~/dotfiles.lua` file
 
-To make custommizations, create a `~/dotfiles.lua` file with the following content:
+To make customizations, create a `~/dotfiles.lua` file with the following content:
 
 ```lua
 local config = {
@@ -57,7 +57,7 @@ xcode-select --install
 ```
 
 ```bash
-git clone git@github.com:nicknisi/dotfiles.git
+git clone git@github.com:gihrig/dotfiles-nicknisi.git
 ```
 
 > [!Note]
@@ -224,7 +224,7 @@ prompt itself to be asynchronously rewritten as data comes in. This prevents the
 prompt from feeling sluggish when, for example, the user is in a large git repo
 and the git prompt commands take a considerable amount of time.
 
-It does this by writing the actual text that will be displayed int he prompt to
+It does this by writing the actual text that will be displayed in the prompt to
 a temp file, which is then used to update the prompt information when a signal
 is trapped.
 
@@ -287,7 +287,7 @@ symlinked into the `~/.config/nvim` directory.
 
 ### Installing plugins
 
-On the first run, all required plugins should automaticaly by installed by
+On the first run, all required plugins should automatically by installed by
 [lazy.nvim](https://github.com/folke/lazy.nvim), a plugin manager for neovim.
 
 All plugins are listed in [plugins.lua](./config/nvim/lua/plugins.lua). When a
@@ -383,7 +383,7 @@ test the dotfiles installation process with linux.
 ## Preferred software
 
 I almost exclusively work on macOS, so this list will be specific to that
-operating system, but several of these reccomendations are also available,
+operating system, but several of these recommendations are also available,
 cross-platform.
 
 - [WezTerm](https://wezfurlong.org/wezterm/index.html) - A GPU-based terminal
