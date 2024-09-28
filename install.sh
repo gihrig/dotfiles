@@ -293,8 +293,8 @@ setup_macos() {
     echo "Enable tap to click (Trackpad)"
     defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 
-    echo "Enable Safari’s debug menu"
-    defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+    ### echo "Enable Safari’s debug menu"
+    ### defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
     echo "Kill affected applications"
 

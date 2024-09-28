@@ -2,15 +2,15 @@
 
 if OS.mac?
   # taps
-  tap "homebrew/cask-fonts"
-  tap "koekeishiya/formulae"
-  tap "pkgxdev/made"
+  ### tap "homebrew/cask-fonts"
+  ### tap "koekeishiya/formulae"
+  ### tap "pkgxdev/made"
 
   brew "noti" # utility to display notifications from scripts
   brew "trash" # rm, but put in the trash rather than completely delete
 
   # Applications
-  cask "kitty" # a better terminal emulator
+  ###cask "kitty" # a better terminal emulator
   cask "imageoptim" # a tool to optimize images
   cask "1password/tap/1password-cli"
   cask "wezterm" # a better terminal emulator
@@ -53,12 +53,12 @@ brew "htop" # a top alternative
 brew "jq" # work with JSON files in shell scripts
 brew "lazygit" # a better git UI
 brew "neofetch" # pretty system info
-brew "neovim" # A better vim
+### brew "neovim" # A better vim
 brew "python" # python (latest)
 brew "ripgrep" # very fast file searcher
 brew "shellcheck" # diagnostics for shell sripts
 brew "stylua" # lua code formatter
-brew "tmux" # terminal multiplexer
+### brew "tmux" # terminal multiplexer
 brew "tree" # pretty-print directory contents
 brew "vim" # Vim (latest)
 brew "wdiff" # word differences in text files
