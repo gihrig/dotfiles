@@ -1,5 +1,29 @@
 # Dotfiles
 
+###############################################
+TODO list
+
+1. Get working as provided from nicknisi √
+2. Configure to install all desired applications
+3. Configure shell environment [fnm, wezterm, starship, aerospace]
+4. Configure macOS System Settings
+5. Install browser extensions
+6. Configure applications
+   6.1. brew info sqlite
+   6.2. brew info mysql
+   6.3. 1Password login and authorization
+   6.4. Default folder X install license key
+   6.5. Dropbox login
+   6.6. Firefox and Safari Install extensions see ~/.config/setup/ r-extention-list.txt
+   6.7. Firefox login - see ~/.config/setup/Browser-extension-list.txt
+   6.8. SoftRAID install license key
+   6.9. SuperDuper configure scheduled backups
+   6.10. Time Machine setup backup drive
+   6.11. VS Code signin in to github, snyk, phind, settings, docker hub, codium ...
+
+###############################################
+
+
 Welcome to my world! Here you'll find a collection of configuration files for
 various tools and programs that I use on a daily basis. These dotfiles have been
 carefully curated and customized to streamline **my** workflow and
