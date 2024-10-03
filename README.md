@@ -1,5 +1,7 @@
 # Dotfiles
 
+
+
 ###############################################
 TODO list
 
@@ -66,12 +68,10 @@ return config
 
 ## Initial setup
 
-The first thing you need to do is to clone this repo into a location of your
-choosing. For example, if you have a `~/Developer` directory where you clone all
-of your git repos, that's a good choice for this one, too. This repo is setup to
-not rely on the location of the dotfiles, so you can place it anywhere.
-
 > [!Note]
+> This utility is designed to run on a fresh macOS install:
+> - Create an admin user that will execute this utility
+> - Login with an appropriate Apple ID for Mac App Store support
 >
 > If you're on macOS, you'll also need to install the XCode CLI tools before
 > continuing.
@@ -81,7 +81,7 @@ xcode-select --install
 ```
 
 ```bash
-git clone git@github.com:gihrig/dotfiles-nicknisi.git
+git clone git@github.com:gihrig/dotfiles.git
 ```
 
 > [!Note]
