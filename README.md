@@ -1,13 +1,11 @@
 # Dotfiles
 
-
-
 ###############################################
 TODO list
 
 1. Get working as provided from nicknisi √
 2. Configure to install all desired applications
-3. Configure shell environment [fnm, wezterm, starship, aerospace]
+3. Configure shell environment [fzf, fnm, wezterm, starship, aerospace]
 4. Configure macOS System Settings
 5. Install browser extensions
 6. Configure applications
@@ -16,7 +14,7 @@ TODO list
    6.3. 1Password login and authorization
    6.4. Default folder X install license key
    6.5. Dropbox login
-   6.6. Firefox and Safari Install extensions see ~/.config/setup/ r-extention-list.txt
+   6.6. Firefox and Safari Install extensions see ~/.config/setup/ browser-extension-list.txt
    6.7. Firefox login - see ~/.config/setup/Browser-extension-list.txt
    6.8. SoftRAID install license key
    6.9. SuperDuper configure scheduled backups
@@ -26,62 +24,25 @@ TODO list
 ###############################################
 
 
-Welcome to my world! Here you'll find a collection of configuration files for
-various tools and programs that I use on a daily basis. These dotfiles have been
-carefully curated and customized to streamline **my** workflow and
-improve **my** productivity. Your results may vary, but feel free to give it a
-try! Whether you're a fellow developer looking to optimize your setup or just
-curious about how I organize my digital life, I hope you find something useful
-in these dotfiles. So take a look around and feel free to borrow, modify, or
-fork to your heart's content. Happy coding!
-
-> [!Note]
->
-> Did you arrive here through my YouTube
-> talk, [vim + tmux](https://www.youtube.com/watch?v=5r6yzFEXajQ)? My dotfiles
-> have changed tremendously since then, but feel free to peruse the state of
-> this
-> repo [at the time the video was recorded](https://github.com/nicknisi/dotfiles/tree/aa72bed5c4ecec540a31192581294818b69b93e2).
-
-<img width="1600" alt="capture-20231114134612" src="https://github.com/nicknisi/dotfiles/assets/293805/43dff50a-8fad-44e5-b979-d72ebd0366f8">
-
-## Customization
-
-I have taken some steps to allow for customization without needing to directly modify the dotfiles. This makes it easier
-for anyone to keep up with the latest version of this repository while adding their own customization on top, and it
-allows for me to make tinkering, tiny changes without having to push updates to the repo constantly.
-
-The customization layer allows for a custom Lua file that can be used to tie customizations into both WezTerm and
-Neovim.
-
-### The `~/dotfiles.lua` file
-
-To make customizations, create a `~/dotfiles.lua` file with the following content:
-
-```lua
-local config = {
-  -- contents goes here...
-}
-
-return config
-```
-
 ## Initial setup
 
 > [!Note]
 > This utility is designed to run on a fresh macOS install:
 > - Create an admin user that will execute this utility
 > - Login with an appropriate Apple ID for Mac App Store support
+> - Install Xcode from the App Store
 >
-> If you're on macOS, you'll also need to install the XCode CLI tools before
-> continuing.
+> Open terminal to run the remaining commands
 
 ```bash
 xcode-select --install
-```
+git --version #(agree to Apple terms)
 
-```bash
-git clone git@github.com:gihrig/dotfiles.git
+ssh git@github.com # A github ssh key must be installed
+
+git clone git@github.com:gihrig/dotfiles.git ~/.config/dotfiles && cd ~/.config/dotfiles
+
+./install.sh # likely run ./install.sh all
 ```
 
 > [!Note]
@@ -97,6 +58,18 @@ installation.
 
 Usage: install.sh {backup|link|homebrew|shell|terminfo|macos|all}
 ```
+
+See the end of this file for further details
+
+### `all`
+Generally, this is the command to use for a new installation
+
+```bash
+./install.sh all
+```
+
+the `all` command runs all of the installation tasks described below, in full, with
+the exception of the `backup` script. You must run that one manually.
 
 ### `backup`
 
@@ -187,15 +160,6 @@ The `macos` command sets up macOS-specific configurations using the
 - Set a shorter Delay until key repeat
 - Enable tap to click (Trackpad)
 - Enable Safari’s debug menu
-
-### `all`
-
-```bash
-./install.sh all
-```
-
-This command runs all of the installation tasks described above, in full, with
-the exception of the `backup` script. You must run that one manually.
 
 ## ZSH Configuration
 
@@ -413,8 +377,19 @@ cross-platform.
 - [WezTerm](https://wezfurlong.org/wezterm/index.html) - A GPU-based terminal
   emulator
 
-## Questions
+## Customization
 
-If you have questions, notice issues, or would like to see improvements, please
-open a new [discussion](https://github.com/nicknisi/dotfiles/discussions/new)
-and I'm happy to help you out!
+The customization layer allows for a custom Lua file that can be used to tie customizations into both WezTerm and
+Neovim.
+
+### The `~/dotfiles.lua` file
+
+To make customizations, create a `~/dotfiles.lua` file with the following content:
+
+```lua
+local config = {
+  -- contents goes here...
+}
+
+return config
+```
