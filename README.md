@@ -4,23 +4,23 @@
 TODO list
 
 1. Get working as provided from nicknisi √
-2. Configure to install all desired applications
-3. Configure shell environment [fstab, .profile, fzf, fnm, wezterm, starship, aerospace]
-4. Configure macOS System Settings
+2. Configure to install all desired applications √
+3. Configure macOS System Settings
+4. Configure shell environment [fstab, .profile, fzf, fnm, wezterm, starship, aerospace]
 5. Install browser extensions
-6. Configure applications
-   6.1. brew info sqlite
-   6.2. brew info mysql
-   6.3. brew info fzf
-   6.4. brew info pkgx
-   6.5. 1Password login and authorization
-   6.6. Default folder X install license key
-   6.7. Dropbox login
-   6.8. Firefox and Safari Install extensions see ~/.config/setup/ browser-extension-list.txt
-   6.9. Firefox login - see ~/.config/setup/Browser-extension-list.txt
-   6.10. SoftRAID install license key
-   6.11. SuperDuper configure scheduled backups
-   6.12. Time Machine setup backup drive
+6. Configure applications\
+   6.1. brew info sqlite\
+   6.2. brew info mysql\
+   6.3. brew info fzf\
+   6.4. brew info pkgx\
+   6.5. 1Password login and authorization\
+   6.6. Default folder X install license key\
+   6.7. Dropbox login\
+   6.8. Firefox and Safari Install extensions see ~/.config/setup/ browser-extension-list.txt\
+   6.9. Firefox login - see ~/.config/setup/Browser-extension-list.txt\
+   6.10. SoftRAID install license key\
+   6.11. SuperDuper configure scheduled backups\
+   6.12. Time Machine setup backup drive\
    6.13. VS Code signin in to github, snyk, phind, settings, docker hub, codium ...
 
 ###############################################
