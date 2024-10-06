@@ -38,41 +38,41 @@ cask "db-browser-for-sqlite"
 brew "sqldiff"
 brew "sqlite"
 brew "sqlite-analyzer"
-brew "appcleaner"
-brew "etrecheckpro"
-brew "onyx"
+cask "appcleaner"
+cask "etrecheckpro"
+cask "onyx"
 
 # Third party apps
 cask "1password/tap/1password-cli"
-brew "1password"
-brew "alfred"
-brew "ankiapp"
-brew "anydesk"
-brew "balenaetcher"
-brew "bbedit"
-brew "betterzip"
-brew "beyond-compare"
-brew "brave-browser"
-brew "cloudflare-warp"
-brew "default-folder-x"
-brew "discord"
+cask "1password"
+cask "alfred"
+cask "anki"
+cask "anydesk"
+cask "balenaetcher"
+cask "bbedit"
+cask "betterzip"
+cask "beyond-compare"
+cask "brave-browser"
+cask "cloudflare-warp"
+cask "default-folder-x"
+cask "discord"
 cask "docker"
-brew "dropbox"
-brew "easyfind"
-brew "firefox"
+cask "dropbox"
+cask "easyfind"
+cask "firefox"
 cask "flux"
-brew "imageoptim"
-brew "macs-fan-control"
-brew "path-finder"
-brew "sequel-ace"
-brew "slack"
-brew "softraid"
-brew "spamsieve"
-brew "superduper"
-brew "torguard"
-brew "visual-studio-code"
+cask "imageoptim"
+cask "macs-fan-control"
+cask "path-finder"
+cask "sequel-ace"
+cask "slack"
+cask "softraid"
+cask "spamsieve"
+cask "superduper"
+cask "torguard"
+cask "visual-studio-code"
 cask "wezterm" # a better terminal emulator
-brew "zoom"
+cask "zoom"
 
 # VS Code extentions
 vscode "alexcvzz.vscode-sqlite"
@@ -96,7 +96,6 @@ vscode "gruntfuggly.todo-tree"
 vscode "hbenl.vscode-test-explorer"
 vscode "hextorgb.hex-to-rgb"
 vscode "jinxdash.prettier-rust"
-vscode "joelday.docthis"
 vscode "kalimahapps.tailwind-config-viewer"
 vscode "kalimahapps.tailwindcss-kit"
 vscode "matthewpi.caddyfile-support"
@@ -138,7 +137,7 @@ vscode "vivaxy.vscode-conventional-commits"
 vscode "yzhang.markdown-all-in-one"
 
 # Packages
-cask "nikitabobko/tap/aerospace" # AeroSpace is an i3-like tiling window manager for macOS
+cask "nikitabobko/tap/aerospace" # AeroSpace is a tiling window manager for macOS
 brew "ansible" # Remote server configurator
 brew "bat" # better cat
 brew "cloc" # lines of code counter
@@ -166,6 +165,7 @@ brew "mysql" # Open source relational database management system
 brew "neofetch" # pretty system info
 brew "noti" # utility to display notifications from scripts
 ### brew "neovim" # A better vim
+tap "pkgxdev/made" # required for pkgx
 brew "pkgxdev/made/pkgx" # npx, but for anything
 brew "python" # python (latest)
 cask "qlimagesize" # Display image info and preview unsupported formats in QuickLook
