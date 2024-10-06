@@ -1,22 +1,6 @@
 # vim:ft=ruby
 
 if OS.mac?
-  # Taps
-  ### tap "homebrew/cask-fonts"
-  ### tap "koekeishiya/formulae"
-  ### tap "pkgxdev/made"
-
-  ### brew "noti" # utility to display notifications from scripts
-  ### brew "trash" # rm, but put in the trash rather than completely delete
-
-  # Applications
-  ### cask "kitty" # a better terminal emulator
-  ### cask "imageoptim" # a tool to optimize images
-  ### cask "1password/tap/1password-cli"
-  ### cask "wezterm" # a better terminal emulator
-
-  # Aerospace
-  ### cask "nikitabobko/tap/aerospace" # AeroSpace is an i3-like tiling window manager for macOS
 
   # Fonts
   cask "font-fira-code"
@@ -26,7 +10,6 @@ if OS.mac?
   cask "font-recursive-code"
   cask "font-monaspace"
 
-  cask  "minisim" # A simple way to launch mobile simulators
 elsif OS.linux?
   brew "xclip" # access to clipboard (similar to pbcopy/pbpaste)
 end
@@ -34,13 +17,14 @@ end
 tap "homebrew/bundle"
 
 # Utilities
+cask "appcleaner"
 cask "db-browser-for-sqlite"
+cask "etrecheckpro"
+cask "minisim" # A simple way to launch mobile simulators
+cask "onyx"
 brew "sqldiff"
 brew "sqlite"
 brew "sqlite-analyzer"
-cask "appcleaner"
-cask "etrecheckpro"
-cask "onyx"
 
 # Third party apps
 cask "1password/tap/1password-cli"
