@@ -12,15 +12,16 @@ TODO list
    6.1. brew info sqlite
    6.2. brew info mysql
    6.3. brew info fzf
-   6.4. 1Password login and authorization
-   6.5. Default folder X install license key
-   6.6. Dropbox login
-   6.7. Firefox and Safari Install extensions see ~/.config/setup/ browser-extension-list.txt
-   6.8. Firefox login - see ~/.config/setup/Browser-extension-list.txt
-   6.9. SoftRAID install license key
-   6.10. SuperDuper configure scheduled backups
-   6.11. Time Machine setup backup drive
-   6.12. VS Code signin in to github, snyk, phind, settings, docker hub, codium ...
+   6.4. brew info pkgx
+   6.5. 1Password login and authorization
+   6.6. Default folder X install license key
+   6.7. Dropbox login
+   6.8. Firefox and Safari Install extensions see ~/.config/setup/ browser-extension-list.txt
+   6.9. Firefox login - see ~/.config/setup/Browser-extension-list.txt
+   6.10. SoftRAID install license key
+   6.11. SuperDuper configure scheduled backups
+   6.12. Time Machine setup backup drive
+   6.13. VS Code signin in to github, snyk, phind, settings, docker hub, codium ...
 
 ###############################################
 
