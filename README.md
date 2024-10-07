@@ -24,7 +24,9 @@ TODO list
    6.13. VS Code signin in to github, snyk, phind, settings, docker hub, codium ...
 
 ###############################################
-
+### Adapted from https://mths.be/macos, https://github.com/nicknisi/dotfiles and
+### https://github.com/ooloth/dotfiles
+### Thanks guys! 💖
 
 ## Initial setup
 
