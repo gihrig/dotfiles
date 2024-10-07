@@ -1,0 +1,41 @@
+Configuring macOS
+==============================
+
+Quitting System Preferences...
+Setting General UI/UX
+Password:
+Setting Trackpad, mouse, keyboard, Bluetooth accessories, and input...
+2024-10-07 00:56:35.618 defaults[3869:36466] Could not write domain com.apple.universalaccess; exiting
+2024-10-07 00:56:35.627 defaults[3870:36479] Could not write domain com.apple.universalaccess; exiting
+Setting Screen...
+Setting Finder...
+Setting Dock, Dashboard, and hot corners...
+Setting Safari & WebKit...
+2024-10-07 00:56:35.950 defaults[3904:36582] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:35.959 defaults[3905:36587] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:35.968 defaults[3906:36590] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:35.976 defaults[3907:36593] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:35.984 defaults[3908:36596] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:35.992 defaults[3909:36599] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:36.001 defaults[3910:36602] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:36.009 defaults[3911:36605] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:36.017 defaults[3912:36608] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:36.026 defaults[3913:36611] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:36.035 defaults[3914:36614] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:36.043 defaults[3915:36617] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:36.051 defaults[3916:36620] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:36.059 defaults[3917:36623] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:36.068 defaults[3918:36626] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:36.077 defaults[3919:36629] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:36.084 defaults[3920:36632] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:36.093 defaults[3921:36635] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+2024-10-07 00:56:36.102 defaults[3922:36638] Could not write domain /Users/admin/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari; exiting
+Setting Mail...
+Setting Activity Monitor...
+Setting Address Book, Dashboard, iCal, TextEdit, and Disk Utility...
+Setting Mac App Store...
+Setting Photos...
+Setting Messages...
+Kill affected applications
+
+Done.
