@@ -8,7 +8,7 @@ echo "Quitting System Preferences..."
 osascript -e 'tell application "System Preferences" to quit'
 
 ###############################################################################
-echo "Setting General UI/UX"
+echo "Setting General UI/UX..."
 ###############################################################################
 
 # Set standby delay to 3 hours (default is 1 hour)

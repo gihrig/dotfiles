@@ -1,7 +1,16 @@
 #!/usr/bin/env bash
 
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+echo "Quitting System Preferences..."
+osascript -e 'tell application "System Preferences" to quit'
+
+###############################################################################
+echo "Exporting settings to defaults.zip"
+###############################################################################
+
 function exportDefaults {
-    local outdir="$HOME/defaults"
+    local outdir="$HOME/dotfiles-defaults"
     local outdirApple="$outdir/apple"
     local outdirUser="$outdir/user"
     local outdirGlobal="$outdir/global"
@@ -81,6 +90,7 @@ function exportDefaults {
     exportDomains
     echo "written $filecount files in $outdir"
     local filestotal=$((filestotal+filecount))
+    echo ""
     # -------------------------------------------------
 
     sudo chown -R "$(whoami)":staff "$outdir"
@@ -89,7 +99,9 @@ function exportDefaults {
 
     local timed="$((SECONDS / 3600))hrs $(((SECONDS / 60) % 60))min $((SECONDS % 60))sec"
 
-    echo "exported $filestotal files in $timed"
+    echo "Exported $filestotal files in $timed to $outdir"
+    echo "Copy defaults.zip to dotfiles/macos for import"
+    echo ""
 }
 
 exportDefaults

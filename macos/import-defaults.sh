@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+echo "Quitting System Preferences..."
+osascript -e 'tell application "System Preferences" to quit'
+
+###############################################################################
+echo "Importing saved settings from defaults.zip"
+###############################################################################
+
 function importDefaults {
     local zipPath=$1
     local extractDir="$HOME/defaults"
@@ -56,11 +65,13 @@ function importDefaults {
     # Import plist files in the global directory
     importDomains "$globalDir"
 
-    echo "Defaults import completed. Imported a total of $filesTotal files."
+    echo "Import from $1 is complete."
+    echo "Imported a total of $filesTotal files."
+    echo ""
 }
 
 if [ -z "$1" ]; then
-    echo "Please provide the path to the zip file."
+    echo "Usage: ./import-defaults.sh {path to defaults.zip}"
 else
     importDefaults "$1"
 fi

@@ -50,6 +50,8 @@ backup() {
   echo "Creating backup directory at $BACKUP_DIR"
   mkdir -p "$BACKUP_DIR"
 
+  echo "Backing up linkable files..."
+
   for file in "${linkables[@]}"; do
     filename="$(basename "$file")"
     target="$HOME/$filename"
@@ -69,6 +71,10 @@ backup() {
       warning "$filename does not exist at this location or is a symlink"
     fi
   done
+
+  title "Exporting macOS settings..."
+  $DOTFILES/macos/export-defaults.sh
+
 }
 
 cleanup_symlinks() {
@@ -248,9 +254,10 @@ function setup_terminfo() {
 }
 
 setup_macos() {
-  title "Configuring macOS"
+  title "Configuring macOS - Resoring from $DOTFILES/macos/defaults.zip"
   if [[ "$(uname)" == "Darwin" ]]; then
 
+    $DOTFILES/macos/import-defaults.sh $DOTFILES/macos/defaults.zip
     $DOTFILES/macos/macos-defaults.sh
 
     echo "Kill affected applications"
