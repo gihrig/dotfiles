@@ -21,7 +21,9 @@ TODO list
    6.10. SoftRAID install license key\
    6.11. SuperDuper configure scheduled backups\
    6.12. Time Machine setup backup drive\
-   6.13. VS Code signin in to github, snyk, phind, settings, docker hub, codium ...
+   6.13. VS Code sign in to github, snyk, phind, settings, docker hub, codium ...
+   6.14. Setup Flux
+   6.15. Setup Default-FolderX
 
 ###############################################
 ### Adapted from https://mths.be/macos, https://github.com/nicknisi/dotfiles and

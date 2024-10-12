@@ -9,14 +9,29 @@ local fancy = false
 
 config.macos_window_background_blur = 30
 config.enable_tab_bar = false
-config.window_decorations = "RESIZE"
+config.window_decorations = "TITLE | RESIZE"
 config.window_close_confirmation = "NeverPrompt"
+config.initial_rows = 32
+config.initial_cols = 120
 config.native_macos_fullscreen_mode = true
 config.window_padding = {
-  left = 0,
-  right = 0,
-  top = 0,
-  bottom = 0,
+  left = 10,
+  right = 10,
+  top = 10,
+  bottom = 10,
+}
+
+local act = wezterm.action
+config.keys = {
+	{ mods = "OPT", key = "LeftArrow", action = act.SendKey({ mods = "ALT", key = "b" }) },
+	{ mods = "OPT", key = "RightArrow", action = act.SendKey({ mods = "ALT", key = "f" }) },
+	{ mods = "CMD", key = "LeftArrow", action = act.SendKey({ mods = "CTRL", key = "a" }) },
+	{ mods = "CMD", key = "RightArrow", action = act.SendKey({ mods = "CTRL", key = "e" }) },
+	{ mods = "CMD", key = "Backspace", action = act.SendKey({ mods = "CTRL", key = "u" }) },
+	{ mods = "CMD|OPT", key = "LeftArrow", action = act.ActivateTabRelative(-1) },
+	{ mods = "CMD|OPT", key = "RightArrow", action = act.ActivateTabRelative(1) },
+	{ mods = "CMD|SHIFT", key = "LeftArrow", action = act.ActivateTabRelative(-1) },
+	{ mods = "CMD|SHIFT", key = "RightArrow", action = act.ActivateTabRelative(1) },
 }
 
 -- font config
