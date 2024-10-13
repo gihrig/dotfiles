@@ -158,6 +158,7 @@ cask "qlmarkdown" # Quick Look generator for Markdown files
 cask "qlvideo" # Thumbnails, static previews, cover art and metadata for video files
 brew "ripgrep" # very fast file searcher
 brew "shellcheck" # diagnostics for shell sripts
+brew "shortcat" # control macOS using the keyboard only
 brew "starship" # Cross-shell prompt for astronauts
 brew "stow" # symlink farm manager
 brew "stylua" # lua code formatter
