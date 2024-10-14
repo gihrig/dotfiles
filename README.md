@@ -24,7 +24,7 @@ TODO list
    6.13. Time Machine setup backup drive\
    6.14. VS Code sign in to github, snyk, phind, settings, docker hub, codium ...
    6.15. Setup Flux
-   6.16. Setup Shortcat - Hot key CMD-Space, disable Sys Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search and Show Finder search window
+   6.16. Setup Shortcat - Hot key CMD-Space, Sys Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space
 
 ###############################################
 ### Adapted from https://mths.be/macos, https://github.com/nicknisi/dotfiles and
