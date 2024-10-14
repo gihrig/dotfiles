@@ -35,6 +35,12 @@ TODO list
 
 > [!Note]
 > This utility is designed to run on a fresh macOS install:
+> Things you will need:
+> - - Internet connection
+> - - Administrator user name and password
+> - - Apple ID and password for the administrator account (or create a new ID)
+> - - ssh key for GitHub account
+> - - Passphrase for Github ssh key
 > - Create an admin user that will execute this utility
 > - Login with an appropriate Apple ID for Mac App Store support
 > - Install Xcode from the App Store
