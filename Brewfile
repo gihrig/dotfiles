@@ -37,6 +37,7 @@ cask "bbedit"
 cask "betterzip"
 cask "beyond-compare"
 cask "brave-browser"
+cask "cheatsheet"
 cask "cloudflare-warp"
 cask "default-folder-x"
 cask "discord"
@@ -50,6 +51,7 @@ cask "imageoptim"
 cask "macs-fan-control"
 cask "path-finder"
 cask "sequel-ace"
+brew "shortcat" # control macOS using the keyboard only
 cask "slack"
 cask "softraid"
 cask "spamsieve"
@@ -158,7 +160,6 @@ cask "qlmarkdown" # Quick Look generator for Markdown files
 cask "qlvideo" # Thumbnails, static previews, cover art and metadata for video files
 brew "ripgrep" # very fast file searcher
 brew "shellcheck" # diagnostics for shell sripts
-brew "shortcat" # control macOS using the keyboard only
 brew "starship" # Cross-shell prompt for astronauts
 brew "stow" # symlink farm manager
 brew "stylua" # lua code formatter
