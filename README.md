@@ -20,11 +20,12 @@ TODO list
    6.9. Firefox and Safari Install extensions see ~/.config/setup/ browser-extension-list.txt\
    6.10. Firefox login - see ~/.config/setup/Browser-extension-list.txt\
    6.11. SoftRAID install license key\
-   6.12. SuperDuper configure scheduled backups\
-   6.13. Time Machine setup backup drive\
-   6.14. VS Code sign in to github, snyk, phind, settings, docker hub, codium ...
-   6.15. Setup Flux
-   6.16. Setup Shortcat - Hot key CMD-Space, Sys Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space
+   6.12. SuperDuper configure scheduled backups to G-SON-SD\
+   6.13. Time Machine setup backup to G-SON-TM\
+   6.14. VS Code sign in to github, snyk, phind, settings, docker hub, codium ...\
+   6.15. Setup Flux\
+   6.16. Setup Shortcat - Hot key CMD-Space, Sys Settings > Spotlight > Keyboard shortcuts >\
+         Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
 
 ###############################################
 ### Adapted from https://mths.be/macos, https://github.com/nicknisi/dotfiles and
