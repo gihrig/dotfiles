@@ -10,6 +10,7 @@ COLOR_YELLOW="\033[1;33m"
 COLOR_NONE="\033[0m"
 
 linkables=(
+  # "zsh/.profile"
   # "zsh/.zshrc"
   # "zsh/.zshenv"
   # "zsh/.zprofile"
@@ -214,7 +215,7 @@ setup_homebrew() {
   fi
 
   # install brew dependencies from Brewfile
-  brew bundle
+  brew bundle --no-lock 
 
   # install fzf
   echo -e
@@ -254,7 +255,7 @@ function setup_terminfo() {
 }
 
 setup_macos() {
-  title "Configuring macOS - Resoring from $DOTFILES/macos/defaults.zip"
+  title "Configuring macOS - Restoring from $DOTFILES/macos/defaults.zip"
   if [[ "$(uname)" == "Darwin" ]]; then
 
     $DOTFILES/macos/import-defaults.sh $DOTFILES/macos/defaults.zip

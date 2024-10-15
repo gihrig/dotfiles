@@ -155,3 +155,5 @@ for file in "$ZDOTDIR/.zsh_prompt" "$ZDOTDIR/.zsh_aliases"; do
     fi
 done
 
+# If a ~/.profile exists, source it
+[[ -f ~/.profile ]] && source ~/.profile
