@@ -152,7 +152,6 @@ brew "mysql" # Open source relational database management system
 brew "neofetch" # pretty system info
 brew "noti" # utility to display notifications from scripts
 ### brew "neovim" # A better vim
-### tap "pkgxdev/made" # required for pkgx
 brew "pkgxdev/made/pkgx" # npx, but for anything
 brew "python" # python (latest)
 cask "qlimagesize" # Display image info and preview unsupported formats in QuickLook
