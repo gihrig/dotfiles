@@ -179,6 +179,7 @@ brew "zstd" # real-time compression algorithm
 # MAS Mac App Store
 brew "mas"
 # App Store apps
+# Items below must be previously purchased or shared
 mas "1Password for Safari", id: 1569813296
 mas "GarageBand", id: 682658836
 mas "Ghostery Privacy Ad Blocker", id: 6504861501
