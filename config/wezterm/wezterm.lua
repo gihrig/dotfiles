@@ -34,25 +34,6 @@ config.keys = {
 	{ mods = "CMD|SHIFT", key = "RightArrow", action = act.ActivateTabRelative(1) },
 }
 
--- font config
-config.font = wezterm.font("Monaspace Neon", { weight = "Regular" })
-config.font_rules = {
-  {
-    intensity = "Normal",
-    italic = true,
-    font = wezterm.font("Monaspace Radon", { weight = "Regular" }),
-  },
-  {
-    intensity = "Bold",
-    italic = false,
-    font = wezterm.font("Monaspace Neon", { weight = "ExtraBold" }),
-  },
-  {
-    intensity = "Bold",
-    italic = true,
-    font = wezterm.font("Monaspace Radon", { weight = "ExtraBold" }),
-  },
-}
 config.harfbuzz_features = { "calt", "dlig", "clig=1", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08" }
 config.font_size = 16
 config.line_height = 1.1
@@ -94,5 +75,15 @@ else
     b.get_background(),
   }
 end
+
+config.default_cursor_style = 'BlinkingUnderline'
+config.colors = {
+  cursor_border = "#00FF00",
+  cursor_bg = "#00FF00",
+}
+
+config.animation_fps = 1
+config.cursor_blink_ease_in = 'Constant'
+config.cursor_blink_ease_out = 'Constant'
 
 return config
