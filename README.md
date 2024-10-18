@@ -24,7 +24,8 @@ TODO list
    6.13. Time Machine setup backup to G-SON-TM\
    6.14. VS Code sign in to github, snyk, phind, settings, docker hub, codium ...\
    6.15. Setup Flux\
-   6.16. Setup Shortcat - Hot key CMD-Space, Sys Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space
+   6.16. Setup Shortcat - Hot key CMD-Space, Sys Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
+   6.17. Open all "Third Party Apps" (see Brewfile) and configure as needed
 
 ###############################################
 ### Adapted from https://mths.be/macos, https://github.com/nicknisi/dotfiles and
@@ -36,17 +37,17 @@ TODO list
 > [!Note]
 > This utility is designed to run on a fresh macOS install:
 > Things you will need:
-> - - Internet connection
-> - - Administrator user name and password
-> - - - Password will be prompted several times throughout execution
-> - - Apple ID and password for the administrator account (or create a new ID)
-> - - - Items to be installed must be previously purchased or shared. see Brewfile > mas
-> - - - Terminal used to run this script must have full disk access
-> - - ssh key for GitHub account
-> - - Passphrase for Github ssh key
-> - Create an admin user that will execute this utility
-> - Login with an appropriate Apple ID for Mac App Store support
-> - Install Xcode from the App Store
+> - Internet connection
+> - Administrator user name and password
+> - - Password will be prompted several times throughout execution
+> - Apple ID and password for the administrator account (or create a new ID)
+> - - Items from App Store must be previously purchased or shared. see Brewfile > mas
+> - - Terminal used to run this script must have full disk access
+> - ssh key for GitHub account
+> - Passphrase for Github ssh key
+> Create an admin user that will execute this utility
+> Login with an appropriate Apple ID for Mac App Store support
+> Install Xcode from the App Store
 >
 > Open terminal to run the remaining commands
 
