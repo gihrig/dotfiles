@@ -320,7 +320,7 @@ defaults write com.apple.dock mru-spaces -bool false
 
 ###############################################################################
 echo "Setting Safari & WebKit..."
-echo Terminal needs full disk access for - If errors
+echo "Terminal needs full disk access - Fix and re-run if errors"
 ###############################################################################
 
 # Add a context menu item for showing the Web Inspector in web views
