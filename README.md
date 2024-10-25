@@ -3,29 +3,30 @@
 ###############################################
 TODO list
 
-1. Get working as provided from nicknisi √
-2. Configure to install all desired applications √
-3. Configure macOS System Settings
-4. Configure shell environment [fstab, .profile, fzf, fnm, wezterm, starship, aerospace]
-5. Install browser extensions
-6. Configure applications\
-   6.1. brew info sqlite\
-   6.2. brew info mysql\
-   6.3. brew info fzf\
-   6.4. brew info pkgx\
-   6.5. TorGuard login\
-   6.6. 1Password login and authorization\
-   6.7. Default folder X install license key\
-   6.8. Dropbox login\
-   6.9. Firefox and Safari Install extensions see ~/.config/setup/ browser-extension-list.txt\
-   6.10. Firefox login - see ~/.config/setup/Browser-extension-list.txt\
-   6.11. SoftRAID install license key\
-   6.12. SuperDuper configure scheduled backups to G-SON-SD\
-   6.13. Time Machine setup backup to G-SON-TM\
-   6.14. VS Code sign in to github, snyk, phind, settings, docker hub, codium ...\
-   6.15. Setup Flux\
-   6.16. Setup Shortcat - Hot key CMD-Space, Sys Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
-   6.17. Open all "Third Party Apps" (see Brewfile) and configure as needed
+1. Execute Dotfiles to install apps and some settings √
+2. Configure remaining macOS System Settings per Sonoma_Settings.txt √
+3. Configure shell environment [/etc/fstab, .ssh .profile, fzf, fnm, wezterm, starship, aerospace] √
+4. Configure applications\
+   4.1. 1Password login and authorization √\
+   4.2. TorGuard login - Glen √\
+   4.3. Warp login - Janis √\
+   4.4. Firefox login - see ~/.config/setup/Browser-extension-list.txt √\
+   4.5. Firefox and Safari Install extensions see ~/.config/setup browser-extension-list.txt √\
+   4.6. Setup Shortcat - Hot key CMD-Space √\
+   -- Sys Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
+   4.7. brew info sqlite √
+   4.8. brew info mysql\
+   4.9. brew info fzf\
+   4.10. brew info pkgx\
+   4.11. Default folder X install license key\
+   4.12. Dropbox login\
+   4.13. Beyond compare install license key\
+   4.14. SoftRAID install license key\
+   4.15. SuperDuper configure scheduled backups to G-SON-SD\
+   4.15. Time Machine setup backup to G-SON-TM\
+   4.16. VS Code sign in to github, snyk, phind, settings, docker hub, codium ...\
+   4.17. Setup Flux\
+   4.18. Open all "Third Party Apps" (see Brewfile) and configure as needed
 
 ###############################################
 ### Adapted from https://mths.be/macos, https://github.com/nicknisi/dotfiles and
@@ -45,7 +46,13 @@ TODO list
 > - - Terminal used to run this script must have full disk access
 > - ssh key for GitHub account
 > - Passphrase for Github ssh key
+> Transfer or Reset
+> - Empty Trash (reset does not!)
+> - System Settings > Transfer or Reset > Erase All Content and Settings
+
 > Create an admin user that will execute this utility
+> Set Machine Name (updates User and Hostname) - System Settings > General > About
+> Set Full Disk Access for terminal - System Settings > Privacy & Security > Full Disk Access > +
 > Login with an appropriate Apple ID for Mac App Store support
 > Install Xcode from the App Store
 >

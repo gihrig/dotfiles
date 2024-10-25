@@ -1,0 +1,31 @@
+FireFox and Safari browser extensions install list
+
+Firefox:
+--------
+Configure iCrumz shortcut
+1Password
+Brave Search
+Cisco Webex
+Crate.io Search
+Dark Reader
+Dev Environments
+Disable JavaScript
+Facebook Container
+Ghostery Tracker & Ad Blocker
+Gitpod
+Js Search Extension
+Kagi Search for Firefox
+NPM Package Search
+Perplexity Omnibox
+Phind.com Search Engine
+Privacy Badger
+Rust Search Extension
+Startpage Privacy Protection
+Svelte Devtools
+To Google Translate
+
+Safari:
+-------
+Configure iCrumz shortcut
+1Password
+Ghostery

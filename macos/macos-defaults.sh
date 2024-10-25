@@ -174,7 +174,7 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # Use column view in all Finder windows by default
 # Four-letter codes for all view modes: `icnv`, `clmv`, `Flwv`, `Nlsv`
-defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 # Show the ~/Library folder in Finder
 chflags nohidden ~/Library
@@ -270,7 +270,7 @@ defaults write com.apple.dock tilesize -int 72
 defaults write com.apple.dock show-process-indicators -bool true
 
 # Make Dock icons of hidden applications translucent
-defaults write com.apple.dock showhidden -bool true
+defaults write com.apple.dock showhidden -bool false
 
 # Speed up Mission Control animations
 defaults write com.apple.dock expose-animation-duration -float 0.1
@@ -319,8 +319,7 @@ defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-
 defaults write com.apple.dock mru-spaces -bool false
 
 ###############################################################################
-echo "Setting Safari & WebKit..."
-echo "Terminal needs full disk access - Fix and re-run if errors"
+echo "Setting Safari & WebKit... Errors? Terminal needs full disk access"
 ###############################################################################
 
 # Add a context menu item for showing the Web Inspector in web views

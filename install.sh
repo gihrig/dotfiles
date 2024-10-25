@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Prevent system sleep while script is running
+caffeinate -i -w $$ &
+
 DOTFILES="$(pwd)"
 COLOR_GRAY="\033[1;38;5;243m"
 COLOR_BLUE="\033[1;34m"
@@ -48,16 +51,16 @@ success() {
 backup() {
   BACKUP_DIR=$HOME/dotfiles-backup
 
-  echo "Creating backup directory at $BACKUP_DIR"
+  info "Creating backup directory at $BACKUP_DIR"
   mkdir -p "$BACKUP_DIR"
 
-  echo "Backing up linkable files..."
+  info "Backing up linkable files..."
 
   for file in "${linkables[@]}"; do
     filename="$(basename "$file")"
     target="$HOME/$filename"
     if [ -f "$target" ]; then
-      echo "backing up $filename"
+      info "backing up $filename"
       cp "$target" "$BACKUP_DIR"
     else
       warning "$filename does not exist at this location or is a symlink"
@@ -66,7 +69,7 @@ backup() {
 
   for filename in "$HOME/.config/nvim" "$HOME/.vim" "$HOME/.vimrc"; do
     if [ ! -L "$filename" ]; then
-      echo "backing up $filename"
+      info "backing up $filename"
       cp -rf "$filename" "$BACKUP_DIR"
     else
       warning "$filename does not exist at this location or is a symlink"
@@ -92,7 +95,7 @@ cleanup_symlinks() {
     fi
   done
 
-  echo -e
+  info
   info "installing to $config_home"
 
   config_files=$(find "$DOTFILES/config" -maxdepth 1 2>/dev/null)
@@ -255,13 +258,16 @@ function setup_terminfo() {
 }
 
 setup_macos() {
-  title "Configuring macOS - Restoring from $DOTFILES/macos/defaults.zip"
+  title "Configuring macos"
   if [[ "$(uname)" == "Darwin" ]]; then
 
+    info "Restoring previously backed up defaults from $DOTFILES/macos/defaults.zip"
     $DOTFILES/macos/import-defaults.sh $DOTFILES/macos/defaults.zip
+
+    info "Establishing settings defined in $DOTFILES/macos/macos-defaults.sh"
     $DOTFILES/macos/macos-defaults.sh
 
-    echo "Kill affected applications"
+    info "Kill affected applications"
 
     for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
   else
@@ -309,10 +315,10 @@ all)
   setup_macos
   ;;
 *)
-  echo -e $"\nUsage: $(basename "$0") {backup|link|git|homebrew|shell|terminfo|macos|all}\n"
+  info "\nUsage: $(basename "$0") {backup|link|git|homebrew|shell|terminfo|macos|all}\n"
   exit 1
   ;;
 esac
 
 echo -e
-success "Done."
+success "Done. Now Reboot!"

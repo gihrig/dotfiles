@@ -50,9 +50,10 @@ brew "htop" # a top alternative
 brew "jq" # work with JSON files in shell scripts
 brew "lazygit" # a better git UI
 brew "llvm" # Next-gen compiler infrastructure
+brew "macchina" # pretty system info
 brew "make" # Utility for directing compilation
 brew "mysql" # Open source relational database management system
-brew "neofetch" # pretty system info
+brew "node" # Node.js runtime
 brew "noti" # utility to display notifications from scripts
 ### brew "neovim" # A better vim
 brew "pkgxdev/made/pkgx" # npx, but for anything
@@ -61,6 +62,7 @@ cask "qlimagesize" # Display image info and preview unsupported formats in Quick
 cask "qlmarkdown" # Quick Look generator for Markdown files
 cask "qlvideo" # Thumbnails, static previews, cover art and metadata for video files
 brew "ripgrep" # very fast file searcher
+brew "rustup" # Rust toolchain installer
 brew "shellcheck" # diagnostics for shell sripts
 brew "starship" # Cross-shell prompt for astronauts
 brew "stow" # symlink farm manager
@@ -126,7 +128,7 @@ mas "Kindle", id: 302584613
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Peek", id: 1554235898 # Quick look extension
-mas "RegExRx", id: 498370702
+# mas "RegExRx", id: 498370702 # "RegxRx must be purchased from the App Store"
 mas "Xcode", id: 497799835
 
 # VS Code extentions
@@ -135,6 +137,8 @@ vscode "alfredbirk.tailwind-documentation"
 vscode "austenc.tailwind-docs"
 vscode "bradlc.vscode-tailwindcss"
 vscode "bradymholt.pgformatter"
+vscode "Catppuccin.catppuccin-vsc"
+vscode "Catppuccin.catppuccin-vsc-icons"
 vscode "christian-kohler.npm-intellisense"
 vscode "codeium.codeium"
 vscode "codium.codium"
