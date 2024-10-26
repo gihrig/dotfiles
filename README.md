@@ -14,7 +14,7 @@ TODO list
    4.5. Firefox and Safari Install extensions see ~/.config/setup browser-extension-list.txt √\
    4.6. Setup Shortcat - Hot key CMD-Space √\
    -- Sys Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
-   4.7. brew info sqlite √
+   4.7. brew info sqlite √\
    4.8. brew info mysql\
    4.9. brew info fzf\
    4.10. brew info pkgx\
