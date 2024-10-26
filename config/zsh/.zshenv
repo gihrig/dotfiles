@@ -29,5 +29,6 @@ fpath=(
 
 typeset -aU path
 
-export EDITOR='nvim'
-export GIT_EDITOR='nvim'
+export EDITOR='nano'
+export GIT_EDITOR='nano'
+. "$HOME/.cargo/env"

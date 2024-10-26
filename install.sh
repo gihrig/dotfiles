@@ -275,6 +275,13 @@ setup_macos() {
   fi
 }
 
+setup_rust() {
+  title "Configuring rust"
+  rustup-init
+  source "$HOME/.cargo/env"
+  cat $DOTFILES/rust/cargo_packages.txt | xargs cargo install
+}
+
 case "$1" in
 backup)
   backup
@@ -302,6 +309,9 @@ terminfo)
   ;;
 macos)
   setup_macos
+  ;;
+rust)
+  setup_rust
   ;;
 catppuccin)
   fetch_catppuccin_theme
