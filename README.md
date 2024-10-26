@@ -35,7 +35,7 @@ TODO list
 
 ## Initial setup
 
-> [!Note]
+> ## Note
 > This utility is designed to run on a fresh macOS install:
 > Things you will need:
 > - Internet connection
@@ -46,6 +46,9 @@ TODO list
 > - - Terminal used to run this script must have full disk access
 > - ssh key for GitHub account
 > - Passphrase for Github ssh key
+>
+> ## Procedure
+>
 > Transfer or Reset
 > - Empty Trash (reset does not!)
 > - System Settings > Transfer or Reset > Erase All Content and Settings
@@ -59,6 +62,7 @@ TODO list
 > Open terminal to run the remaining commands
 
 ```bash
+hostname # change as desired with sudo hostname {new name}
 xcode-select --install
 git --version #(agree to Apple terms)
 
