@@ -125,7 +125,7 @@ setup_symlinks() {
     fi
   done
 
-  echo -e
+  echo
   info "installing to $config_home"
   if [ ! -d "$config_home" ]; then
     info "Creating $config_home"
@@ -221,7 +221,7 @@ setup_homebrew() {
   brew bundle
 
   # install fzf
-  echo -e
+  echo
   info "Installing fzf"
   "$(brew --prefix)"/opt/fzf/install --key-bindings --completion --no-update-rc --no-bash --no-fish
 }
@@ -276,8 +276,11 @@ setup_macos() {
 }
 
 setup_rust() {
-  title "Configuring rust"
+  title "Configuring rust toolchain"
   rustup-init
+
+  echo
+  title "Installing rust packages"
   source "$HOME/.cargo/env"
   cat $DOTFILES/rust/cargo_packages.txt | xargs cargo install
 }
@@ -330,5 +333,5 @@ all)
   ;;
 esac
 
-echo -e
+echo
 success "Done. Now Reboot!"
