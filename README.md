@@ -15,18 +15,19 @@ TODO list
    4.6. Setup Shortcat - Hot key CMD-Space √\
    -- Sys Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
    4.7. brew info sqlite √\
-   4.8. brew info mysql\
-   4.9. brew info fzf\
-   4.10. brew info pkgx\
-   4.11. Default folder X install license key\
-   4.12. Dropbox login\
-   4.13. Beyond compare install license key\
+   4.8. brew info mysql √\
+   4.9. brew info fzf √\
+   4.10. brew info pkgx √\
+   4.11. Default folder X install license key √\
+   4.12. Dropbox login √\
+   4.13. Beyond compare install license key √\
    4.14. SoftRAID install license key\
-   4.15. SuperDuper configure scheduled backups to G-SON-SD\
-   4.15. Time Machine setup backup to G-SON-TM\
-   4.16. VS Code sign in to github, snyk, phind, settings, docker hub, codium ...\
-   4.17. Setup Flux\
-   4.18. Open all "Third Party Apps" (see Brewfile) and configure as needed
+   4.15. SuperDuper configure scheduled backups to G-SON-SD √\
+   4.15. Time Machine setup backup to G-SON-TM √\
+   4.16. Setup Flux √\
+   4.17. VS Code sign in to github, snyk, phind, settings, codium, docker hub  √\
+   4.18. Setup CheatSheet √/
+   4.19. Open all "Third Party Apps" (see Brewfile) and configure as needed
 
 ###############################################
 ### Adapted from https://mths.be/macos, https://github.com/nicknisi/dotfiles and
