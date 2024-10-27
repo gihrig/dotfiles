@@ -173,7 +173,7 @@ Software Updates
 
   Lock Screen
     Start screen saver when inactive > 20 min
-**  Turn display off when inactive > 1hr
+**  Turn display off when inactive > 2hr
 **  Require password after screen saver or display is turned off > After 4 hours
     Show large clock > Lock screen
     When Switching User >
