@@ -3,30 +3,30 @@
 ###############################################
 TODO list
 
-1. Execute Dotfiles to install apps and some settings √
-2. Configure remaining macOS System Settings per Sonoma_Settings.txt √
-3. Configure shell environment [/etc/fstab, .ssh .profile, fzf, fnm, wezterm, starship, aerospace] √
+1. Execute Dotfiles to install apps and some settings
+2. Configure remaining macOS System Settings per Sonoma_Settings.txt
+3. Configure shell environment [/etc/fstab, .ssh .profile, fzf, fnm, wezterm, starship, aerospace]
 4. Configure applications\
-   4.1. 1Password login and authorization √\
-   4.2. TorGuard login - Glen √\
-   4.3. Warp login - Janis √\
-   4.4. Firefox login - see ~/.config/setup/Browser-extension-list.txt √\
-   4.5. Firefox and Safari Install extensions see ~/.config/setup browser-extension-list.txt √\
-   4.6. Setup Shortcat - Hot key CMD-Space √\
+   4.1. 1Password login and authorization \
+   4.2. TorGuard login - Glen \
+   4.3. Warp login - Janis \
+   4.4. Firefox login - see ~/.config/setup/Browser-extension-list.txt \
+   4.5. Firefox and Safari Install extensions see ~/.config/setup browser-extension-list.txt \
+   4.6. Setup Shortcat - Hot key CMD-Space \
    -- Sys Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
-   4.7. brew info sqlite √\
-   4.8. brew info mysql √\
-   4.9. brew info fzf √\
-   4.10. brew info pkgx √\
-   4.11. Default folder X install license key √\
-   4.12. Dropbox login √\
-   4.13. Beyond compare install license key √\
+   4.7. brew info sqlite \
+   4.8. brew info mysql \
+   4.9. brew info fzf \
+   4.10. brew info pkgx \
+   4.11. Default folder X install license key \
+   4.12. Dropbox login \
+   4.13. Beyond compare install license key \
    4.14. SoftRAID install license key\
-   4.15. SuperDuper configure scheduled backups to G-SON-SD √\
-   4.15. Time Machine setup backup to G-SON-TM √\
-   4.16. Setup Flux √\
-   4.17. VS Code sign in to github, snyk, phind, settings, codium, docker hub  √\
-   4.18. Setup CheatSheet √/
+   4.15. SuperDuper configure scheduled backups to G-SON-SD \
+   4.15. Time Machine setup backup to G-SON-TM \
+   4.16. Setup Flux \
+   4.17. VS Code sign in to github, snyk, phind, settings, codium, docker hub  \
+   4.18. Setup CheatSheet \
    4.19. Open all "Third Party Apps" (see Brewfile) and configure as needed
 
 ###############################################
