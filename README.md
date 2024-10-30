@@ -16,6 +16,9 @@ TODO list
    -- Sys Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
    4.7. brew info sqlite \
    4.8. brew info mysql \
+   -- Add to /opt/hombrew/etc/my.cnf
+   -- # Use external drive for data files
+   -- datadir=/Volumes/iCrumzData/iCrumz/MySQLData
    4.9. brew info fzf \
    4.10. brew info pkgx \
    4.11. Default folder X install license key \
