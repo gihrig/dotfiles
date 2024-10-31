@@ -4,37 +4,38 @@
 TODO list
 
 1. Copy usb key user/.ssh
-2. Execute Dotfiles to install apps and some settings
-3. Configure remaining macOS System Settings per Sonoma_Settings.txt
-4. Configure shell environment [/etc/fstab, .ssh .profile, fzf, fnm, wezterm, starship, aerospace]
-5. Configure applications\
-   5.1. 1Password login and authorization \
-   5.2. TorGuard login - Glen \
-   5.3. Warp login - Janis \
-   5.4. Firefox login - see ~/.config/setup/Browser-extension-list.txt \
-   5.5. Firefox and Safari Install extensions see ~/.config/setup browser-extension-list.txt \
-   5.6. Setup Apple Mail accounts
-   5.7. Configure Spamseive (see usb key user/Library)
-   5.8. Copy usb key user/arkScript ans user/iczScript folders
-   5.6. Setup Shortcat - Hot key CMD-Space \
+2. Edit fstab: sudo vifs > o > (paste usb user/etc/fstab content) > e > ZZ
+3. Execute Dotfiles to install apps and some settings
+4. Configure remaining macOS System Settings per Sonoma_Settings.txt
+5. Configure shell environment [/etc/fstab, .ssh .profile, fzf, fnm, wezterm, starship, aerospace]
+6. Configure applications\
+   6.1. 1Password login and authorization \
+   6.2. TorGuard login - Glen \
+   6.3. Warp login - Janis \
+   6.4. Firefox login - see ~/.config/setup/Browser-extension-list.txt \
+   6.5. Firefox and Safari Install extensions see ~/.config/setup browser-extension-list.txt \
+   6.6. Setup Apple Mail accounts
+   6.7. Configure Spamseive (see usb key user/Library)
+   6.8. Copy usb key user/arkScript ans user/iczScript folders
+   6.6. Setup Shortcat - Hot key CMD-Space \
    -- Sys Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
-   5.7. brew info sqlite \
-   5.8. brew info mysql \
+   6.7. brew info sqlite \
+   6.8. brew info mysql \
    -- Add to /opt/hombrew/etc/my.cnf
    -- # Use external drive for data files
    -- datadir=/Volumes/iCrumzData/iCrumz/MySQLData
-   5.9. brew info fzf \
-   5.10. brew info pkgx \
-   5.11. Default folder X install license key \
-   5.12. Dropbox login \
-   5.13. Beyond compare install license key \
-   5.14. SoftRAID install license key\
-   5.15. SuperDuper configure scheduled backups to G-SON-SD \
-   5.15. Time Machine setup backup to G-SON-TM \
-   5.16. Setup Flux \
-   5.17. VS Code sign in to github, snyk, phind, settings, codium, docker hub  \
-   5.18. Setup CheatSheet \
-   5.19. Open all "Third Party Apps" (see Brewfile) and configure as needed
+   6.9. brew info fzf \
+   6.10. brew info pkgx \
+   6.11. Default folder X install license key \
+   6.12. Dropbox login \
+   6.13. Beyond compare install license key \
+   6.14. SoftRAID install license key\
+   6.15. SuperDuper configure scheduled backups to G-SON-SD \
+   6.15. Time Machine setup backup to G-SON-TM \
+   6.16. Setup Flux \
+   6.17. VS Code sign in to github, snyk, phind, settings, codium, docker hub  \
+   6.18. Setup CheatSheet \
+   6.19. Open all "Third Party Apps" (see Brewfile) and configure as needed
 
 ###############################################
 ### Adapted from https://mths.be/macos, https://github.com/nicknisi/dotfiles and
