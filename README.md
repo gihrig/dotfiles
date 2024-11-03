@@ -4,38 +4,40 @@
 TODO list
 
 1. Copy usb key user/.ssh
-2. Edit fstab: sudo vifs > o > (paste usb user/etc/fstab content) > e > ZZ
-3. Execute Dotfiles to install apps and some settings
-4. Configure remaining macOS System Settings per Sonoma_Settings.txt
-5. Configure shell environment [/etc/fstab, .ssh .profile, fzf, fnm, wezterm, starship, aerospace]
-6. Configure applications\
-   6.1. 1Password login and authorization \
-   6.2. TorGuard login - Glen \
-   6.3. Warp login - Janis \
-   6.4. Firefox login - see ~/.config/setup/Browser-extension-list.txt \
-   6.5. Firefox and Safari Install extensions see ~/.config/setup browser-extension-list.txt \
-   6.6. Setup Apple Mail accounts
-   6.7. Configure Spamseive (see usb key user/Library)
-   6.8. Copy usb key user/arkScript ans user/iczScript folders
-   6.9. Setup Shortcat - Hot key CMD-Space \
+2. Edit fstab: sudo vifs > o > (paste usb user/etc/fstab content) > e > ZZ - Glen
+3. Terminal: % ssh git@github.com
+4. Terminal: % git clone https://github.com/gihrig/dotfiles.git
+5. Execute Dotfiles to install apps and some settings
+6. Configure remaining macOS System Settings per Sonoma_Settings.txt
+7. Configure shell environment [/etc/fstab, .ssh .profile, fzf, fnm, wezterm, starship, aerospace]
+8. Configure applications\
+   8.1. 1Password login and authorization \
+   8.2. TorGuard login - Glen \
+   8.3. Warp login - Janis \
+   8.4. Firefox login - see ~/.config/setup/Browser-extension-list.txt \
+   8.5. Firefox and Safari Install extensions see ~/.config/setup browser-extension-list.txt \
+   8.6. Setup Apple Mail accounts
+   8.7. Configure Spamseive (see usb key user/Library)
+   8.8. Copy usb key user/arkScript ans user/iczScript folders
+   8.9. Setup Shortcat - Hot key CMD-Space \
    -- Sys Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
-   6.10. brew info sqlite \
-   6.11. brew info mysql \
+   8.10. brew info sqlite \
+   8.11. brew info mysql \
    -- Add to /opt/hombrew/etc/my.cnf
    -- # Use external drive for data files
    -- datadir=/Volumes/iCrumzData/iCrumz/MySQLData
-   6.12. brew info fzf \
-   6.13. brew info pkgx \
-   6.14. Default folder X install license key \
-   6.15. Dropbox login \
-   6.16. Beyond compare install license key \
-   6.17. SoftRAID install license key\
-   6.18. SuperDuper configure scheduled backups to G-SON-SD \
-   6.19. Time Machine setup backup to G-SON-TM \
-   6.20. Setup Flux \
-   6.21. VS Code sign in to github, snyk, phind, settings, codium, docker hub  \
-   6.22. Setup CheatSheet \
-   6.23. Open all "Third Party Apps" (see Brewfile) and configure as needed
+   8.12. brew info fzf \
+   8.13. brew info pkgx \
+   8.14. Default folder X install license key \
+   8.15. Dropbox login \
+   8.16. Beyond compare install license key \
+   8.17. SoftRAID install license key\
+   8.18. SuperDuper configure scheduled backups to G-SON-SD \
+   8.19. Time Machine setup backup to G-SON-TM \
+   8.20. Setup Flux \
+   8.21. VS Code sign in to github, snyk, phind, settings, codium, docker hub  \
+   8.22. Setup CheatSheet \
+   8.23. Open all "Third Party Apps" (see Brewfile) and configure as needed
 
 ###############################################
 ### Adapted from https://mths.be/macos, https://github.com/nicknisi/dotfiles and
