@@ -17,25 +17,25 @@ TODO list
    6.6. Setup Apple Mail accounts
    6.7. Configure Spamseive (see usb key user/Library)
    6.8. Copy usb key user/arkScript ans user/iczScript folders
-   6.6. Setup Shortcat - Hot key CMD-Space \
+   6.9. Setup Shortcat - Hot key CMD-Space \
    -- Sys Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
-   6.7. brew info sqlite \
-   6.8. brew info mysql \
+   6.10. brew info sqlite \
+   6.11. brew info mysql \
    -- Add to /opt/hombrew/etc/my.cnf
    -- # Use external drive for data files
    -- datadir=/Volumes/iCrumzData/iCrumz/MySQLData
-   6.9. brew info fzf \
-   6.10. brew info pkgx \
-   6.11. Default folder X install license key \
-   6.12. Dropbox login \
-   6.13. Beyond compare install license key \
-   6.14. SoftRAID install license key\
-   6.15. SuperDuper configure scheduled backups to G-SON-SD \
-   6.15. Time Machine setup backup to G-SON-TM \
-   6.16. Setup Flux \
-   6.17. VS Code sign in to github, snyk, phind, settings, codium, docker hub  \
-   6.18. Setup CheatSheet \
-   6.19. Open all "Third Party Apps" (see Brewfile) and configure as needed
+   6.12. brew info fzf \
+   6.13. brew info pkgx \
+   6.14. Default folder X install license key \
+   6.15. Dropbox login \
+   6.16. Beyond compare install license key \
+   6.17. SoftRAID install license key\
+   6.18. SuperDuper configure scheduled backups to G-SON-SD \
+   6.19. Time Machine setup backup to G-SON-TM \
+   6.20. Setup Flux \
+   6.21. VS Code sign in to github, snyk, phind, settings, codium, docker hub  \
+   6.22. Setup CheatSheet \
+   6.23. Open all "Third Party Apps" (see Brewfile) and configure as needed
 
 ###############################################
 ### Adapted from https://mths.be/macos, https://github.com/nicknisi/dotfiles and
