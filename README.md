@@ -1,55 +1,15 @@
 # Dotfiles
 
-###############################################
-TODO list
-
-1. Copy usb key user/.ssh
-2. Edit fstab: sudo vifs > o > (paste usb user/etc/fstab content) > e > ZZ - Glen
-3. Terminal: % ssh git@github.com
-4. Terminal: % git clone https://github.com/gihrig/dotfiles.git
-5. Execute Dotfiles to install apps and some settings
-6. Configure remaining macOS System Settings per Sonoma_Settings.txt
-7. Configure shell environment [/etc/fstab, .ssh .profile, fzf, fnm, wezterm, starship, aerospace]
-8. Configure applications\
-   8.1. 1Password login and authorization \
-   8.2. TorGuard login - Glen \
-   8.3. Warp login - Janis \
-   8.4. Firefox login - see ~/.config/setup/Browser-extension-list.txt \
-   8.5. Firefox and Safari Install extensions see ~/.config/setup browser-extension-list.txt \
-   8.6. Setup Apple Mail accounts
-   8.7. Configure Spamseive (see usb key user/Library)
-   8.8. Copy usb key user/arkScript ans user/iczScript folders
-   8.9. Setup Shortcat - Hot key CMD-Space \
-   -- Sys Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
-   8.10. brew info sqlite \
-   8.11. brew info mysql \
-   -- Add to /opt/hombrew/etc/my.cnf
-   -- # Use external drive for data files
-   -- datadir=/Volumes/iCrumzData/iCrumz/MySQLData
-   8.12. brew info fzf \
-   8.13. brew info pkgx \
-   8.14. Default folder X install license key \
-   8.15. Dropbox login \
-   8.16. Beyond compare install license key \
-   8.17. SoftRAID install license key\
-   8.18. SuperDuper configure scheduled backups to G-SON-SD \
-   8.19. Time Machine setup backup to G-SON-TM \
-   8.20. Setup Flux \
-   8.21. VS Code sign in to github, snyk, phind, settings, codium, docker hub  \
-   8.22. Setup CheatSheet \
-   8.23. Open all "Third Party Apps" (see Brewfile) and configure as needed
-
-###############################################
-### Adapted from https://mths.be/macos, https://github.com/nicknisi/dotfiles and
-### https://github.com/ooloth/dotfiles
+### Adapted from https://mths.be/macos, https://github.com/nicknisi/dotfiles and https://github.com/ooloth/dotfiles
 ### Thanks guys! 💖
 
 ## Initial setup
 
 > ## Note
-> This utility is designed to run on a fresh macOS install:
+> This utility is designed to run on a fresh macOS install: \
 > Things you will need:
 > - Internet connection
+> - usb key with bootable installer
 > - Administrator user name and password
 > - - Password will be prompted several times throughout execution
 > - Apple ID and password for the administrator account (or create a new ID)
@@ -57,32 +17,76 @@ TODO list
 > - - Terminal used to run this script must have full disk access
 > - ssh key for GitHub account
 > - Passphrase for Github ssh key
+> - '%' denotes commands executed in the terminal
+> - 'usb key' denotes the setup usb key
 >
-> ## Procedure
+## Procedure
 >
-> Transfer or Reset
-> - Empty Trash (reset does not!)
+Configure macOS
+
+  Erase and reset to factory settings
+  https://support.apple.com/en-us/102664
+
+>
+1. Transfer or Reset
+> - Empty Trash (Transfer or Reset does not!)
 > - System Settings > Transfer or Reset > Erase All Content and Settings
+> - Alternatively boot USB installer to Recovery OS and erase Macintosh HD using Disc Utility
+> - Set language and location
+> - Skip Accessibility
+> - Login or Create the Apple ID to be used with this computer
+> - Create a user account to administer this computer > Admin
+> - Use iCloud Keychain > Yes
+> - Enable location services > Yes
+> - Select Time Zone
+> - Share Mac Analytics data > No
+> - Screen Time > Continue
+> - iCloud Analytics > No
+> - Choose look > Dark (light for Janis)
+> - Keyboard Setup Assistant > Continue > ANSI US
+> - Confirm email address as needed to complete setup
+2. Set Machine Name (updates User and Hostname) - System Settings > General > About
+3. Set Full Disk Access for terminal - System Settings > Privacy & Security > Full Disk Access > +
+4. Install Xcode from the App Store
+5. Copy usb key user/.ssh > user directory
+6. Copy arkScript and iczScript from usb key user - Glen
+7. Edit fstab: sudo vifs > o > (paste usb key user/etc/fstab content) > e > ZZ - Glen
+8. Open terminal and run these commands
+> - % xcode-select --install
+> - % git --version #(agree to Apple terms)
+> - % ssh git@github.com # A github ssh key must be installed
+> - % git clone git@github.com:gihrig/dotfiles.git ~/.config/dotfiles && cd ~/.config/dotfiles
+> - % ./install.sh all
+9. Configure remaining macOS System Settings see Sequoia_Settings.txt
+10. Complete Homebrew setup requirements
+> - brew info sqlite \
+> - brew info mysql \
+> - - Add to /opt/hombrew/etc/my.cnf # Use external drive for data files
+> - - datadir=/Volumes/iCrumzData/iCrumz/MySQLData
+> - brew info fzf \
+> - brew info pkgx \
+11. Configure applications\
+> - 1Password login and authorization \
+> - TorGuard login - Glen \
+> - Warp login - Janis \
+> - Firefox login - create account as needed \
+> - Firefox and Safari Install extensions see browser-extension-list.txt \
+> - Setup Apple Mail accounts
+> - Configure Spamseive (see usb key user/Library)
+> - Setup Shortcat - Hot key CMD-Space \
+> - - System Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
+> - Default folder X install license key \
+> - Dropbox login \
+> - Beyond compare install license key \
+> - SoftRAID install license key\
+> - SuperDuper configure scheduled backups to G-SON-SD \
+> - Time Machine setup backup to G-SON-TM \
+> - Setup Flux \
+> - VS Code sign in to github, snyk, phind, settings, codium, docker hub  \
+> - Setup CheatSheet \
+> - Open remaining "Third Party Apps" (see Brewfile) and configure as needed
 
-> Create an admin user that will execute this utility
-> Set Machine Name (updates User and Hostname) - System Settings > General > About
-> Set Full Disk Access for terminal - System Settings > Privacy & Security > Full Disk Access > +
-> Login with an appropriate Apple ID for Mac App Store support
-> Install Xcode from the App Store
->
-> Open terminal to run the remaining commands
-
-```bash
-hostname # change as desired with sudo hostname {new name}
-xcode-select --install
-git --version #(agree to Apple terms)
-
-ssh git@github.com # A github ssh key must be installed
-
-git clone git@github.com:gihrig/dotfiles.git ~/.config/dotfiles && cd ~/.config/dotfiles
-
-./install.sh # likely run ./install.sh all
-```
+12. Backup Settings and keychain .config/dotfiles/install.sh backup
 
 > [!Note]
 >
