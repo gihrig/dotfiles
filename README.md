@@ -50,22 +50,22 @@ Configure macOS
 4. Install Xcode from the App Store
 5. Copy usb key user/.ssh > user directory
 6. Copy arkScript and iczScript from usb key user - Glen
-7. Edit fstab: sudo vifs > o > (paste usb key user/etc/fstab content) > e > ZZ - Glen
-8. Open terminal and run these commands
+7. Open terminal and run these commands
+> - % sudo vifs > o > (paste usb key user/etc/fstab content) > e > ZZ - Glen
 > - % xcode-select --install
 > - % git --version #(agree to Apple terms)
 > - % ssh git@github.com # A github ssh key must be installed
 > - % git clone git@github.com:gihrig/dotfiles.git ~/.config/dotfiles && cd ~/.config/dotfiles
 > - % ./install.sh all
-9. Configure remaining macOS System Settings see Sequoia_Settings.txt
-10. Complete Homebrew setup requirements
+8. Configure remaining macOS System Settings see Sequoia_Settings.txt
+9. Complete Homebrew setup requirements
 > - brew info sqlite \
 > - brew info mysql \
 > - - Add to /opt/hombrew/etc/my.cnf # Use external drive for data files
 > - - datadir=/Volumes/iCrumzData/iCrumz/MySQLData
 > - brew info fzf \
 > - brew info pkgx \
-11. Configure applications\
+10.  Configure applications\
 > - 1Password login and authorization \
 > - TorGuard login - Glen \
 > - Warp login - Janis \
@@ -86,9 +86,9 @@ Configure macOS
 > - Setup CheatSheet \
 > - Open remaining "Third Party Apps" (see Brewfile) and configure as needed
 
-12. Backup Settings and keychain .config/dotfiles/install.sh backup
+11.  Backup Settings and keychain .config/dotfiles/install.sh backup
 
-> [!Note]
+## Note
 >
 > This dotfiles configuration is set up in such a way that it _shouldn't_ matter
 > where the repo exists on your system.
