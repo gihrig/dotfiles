@@ -51,7 +51,7 @@ Configure macOS
 5. Copy usb key user/.ssh > user directory
 6. Copy arkScript and iczScript from usb key user - Glen
 7. Open terminal and run these commands
-> - % sudo vifs > o > (paste usb key user/etc/fstab content) > e > ZZ - Glen
+> - % sudo vifs > o > (paste usb key user/etc/fstab content) > ESC > ZZ - Glen
 > - % xcode-select --install
 > - % git --version #(agree to Apple terms)
 > - % ssh git@github.com # A github ssh key must be installed
