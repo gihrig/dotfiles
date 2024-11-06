@@ -227,6 +227,8 @@ setup_homebrew() {
 }
 
 fetch_catppuccin_theme() {
+  title "Fetching Catppuccin themes"
+
   for palette in frappe latte macchiato mocha; do
     curl -o "$DOTFILES/config/kitty/themes/catppuccin-$palette.conf" "https://raw.githubusercontent.com/catppuccin/kitty/main/$palette.conf"
   done
