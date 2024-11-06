@@ -326,8 +326,8 @@ all)
   setup_shell
   setup_git
   setup_macos
-  rust
-  catppuccin
+  setup_rust
+  fetch_catppuccin_theme
   ;;
 *)
   info "\nUsage: $(basename "$0") {backup|link|git|homebrew|shell|terminfo|macos|all}\n"
