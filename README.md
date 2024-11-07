@@ -31,7 +31,7 @@ Configure macOS
 1. Transfer or Reset
 > - Empty Trash (Transfer or Reset does not!)
 > - System Settings > Transfer or Reset > Erase All Content and Settings
-> - Alternatively boot USB installer to Recovery OS and erase Macintosh HD using Disc Utility
+> - - Alternatively boot USB installer to Recovery OS and erase Macintosh HD using Disc Utility
 > - Set language and location
 > - Skip Accessibility
 > - Login or Create the Apple ID to be used with this computer
@@ -49,7 +49,7 @@ Configure macOS
 3. Set Full Disk Access for terminal - System Settings > Privacy & Security > Full Disk Access > +
 4. Install Xcode from the App Store
 5. Copy usb key user/.ssh > user directory
-6. Copy arkScript and iczScript from usb key user - Glen
+6. Copy arkScript and iczScript from usb key > user directory - Glen
 7. Open terminal and run these commands
 > - % sudo vifs > o > (paste usb key user/etc/fstab content) > ESC > ZZ - Glen
 > - % xcode-select --install
@@ -79,14 +79,14 @@ Configure macOS
 > - Dropbox login \
 > - Beyond compare install license key \
 > - SoftRAID install license key\
-> - SuperDuper configure scheduled backups to G-SON-SD \
-> - Time Machine setup backup to G-SON-TM \
+> - SuperDuper configure scheduled backups to G-SEQ-SD od J-SEQ-SD \
+> - Time Machine setup backup to G-SEQ-TM or J-SEQ-TM \
 > - Setup Flux \
 > - VS Code sign in to github, snyk, phind, settings, codium, docker hub  \
 > - Setup CheatSheet \
 > - Open remaining "Third Party Apps" (see Brewfile) and configure as needed
 
-11.  Backup Settings and keychain .config/dotfiles/install.sh backup
+11.  Backup Settings and keychain % .config/dotfiles/install.sh backup
 
 ## Note
 >
@@ -99,7 +99,7 @@ installation.
 ```bash
 > ./install.sh help
 
-Usage: install.sh {backup|link|homebrew|shell|terminfo|macos|all}
+Usage: {backup|clean|link|copy|git|homebrew|shell|terminfo|macos|rust|all}
 ```
 
 See the end of this file for further details
@@ -111,7 +111,7 @@ Generally, this is the command to use for a new installation
 ./install.sh all
 ```
 
-the `all` command runs all of the installation tasks described below, in full, with
+The `all` command runs all of the installation tasks described below, in full, with
 the exception of the `backup` script. You must run that one manually.
 
 ### `backup`
@@ -131,6 +131,14 @@ moving some files in the
 - `~/.vim/` - The home of vim configuration
 - `~/.vimrc` - The main init file for vim
 
+### `clean`
+
+```bash
+./install.sh clean
+```
+
+The `clean` command will remove all of the symlinks created by the `link` command.
+
 ### `link`
 
 ```bash
@@ -142,6 +150,23 @@ The `link` command will create
 directory into the `$HOME` directory, allowing for all of the configuration to
 _act_ as if it were there without being there, making it easier to maintain the
 dotfiles in isolation.
+
+### `copy`
+
+```bash
+./install.sh copy
+```
+
+The `copy` command will copy the files from the dotfiles directory into the
+`$HOME` directory, making it easier to maintain the dotfiles in isolation.
+
+### `git`
+
+```bash
+./install.sh git
+```
+
+The `git` command sets up git and configures it for the provided user and Github account.
 
 ### `homebrew`
 
@@ -203,13 +228,23 @@ The `macos` command sets up macOS-specific configurations using the
 - Set a shorter Delay until key repeat
 - Enable tap to click (Trackpad)
 - Enable Safari’s debug menu
+- Restore previously backed up defaults from $DOTFILES/macos/defaults.zip. see backup command
+
+### `rust`
+
+```bash
+./install.sh rust
+```
+
+- Install rustup and run it's `rustup-init` command
+- Install cargo add-ins listed in dotfiles/rust/cargo_packages.txt
 
 ## ZSH Configuration
 
 The prompt for ZSH is configured in the `zsh/zshrc` file and performs the
 following operations.
 
-- Sets `EDITOR` to `nvim`
+- Sets `EDITOR` to `nano`
 - Loads any `~/.terminfo` setup
 - Sets `CODE_DIR` to `~/Developer`. This can be changed to the location you use
   to put your git checkouts, and enables fast `cd`-ing into it via the `c`

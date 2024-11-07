@@ -82,7 +82,7 @@
     assumed = "!git ls-files -v | grep ^h | cut -c 3-"
     unassumeall = "!git assumed | xargs git update-index --no-assume-unchanged"
 
-    # clean up all 
+    # clean up all
     forget = "!git fetch -p origin && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D"
 
     latest = "!git for-each-ref --sort='-committerdate' --format='%(color:red)%(refname)%(color:reset)%09%(committerdate)' refs/remotes | sed -e 's-refs/remotes/origin/--' | less -XFR"
@@ -143,7 +143,7 @@
     whitespace = nowarn
 [core]
     pager = delta
-    editor = vim
+    editor = nano
     whitespace = cr-at-eol
 [delta]
     features = unobtrusive-line-numbers decorations

@@ -95,9 +95,6 @@ cleanup_symlinks() {
     fi
   done
 
-  info
-  info "installing to $config_home"
-
   config_files=$(find "$DOTFILES/config" -maxdepth 1 2>/dev/null)
   for config in $config_files; do
     target="$config_home/$(basename "$config")"
@@ -320,7 +317,18 @@ all)
   setup_rust
   ;;
 *)
-  info "\nUsage: $(basename "$0") {backup|link|git|homebrew|shell|terminfo|macos|all}\n"
+  info "\nUsage: $(basename "$0") {backup|clean|link|copy|git|homebrew|shell|terminfo|macos|rust|all}\n"
+  echo "  backup   - backup existing symlinks and macos settings"
+  echo "  clean    - remove existing symlinks"
+  echo "  link     - create symlinks"
+  echo "  copy     - copy config files"
+  echo "  git      - setup git"
+  echo "  homebrew - setup homebrew"
+  echo "  shell    - setup shell"
+  echo "  terminfo - setup terminfo"
+  echo "  macos    - setup macos"
+  echo "  rust     - setup rust toolchain"
+  echo "  all      - setup everything"
   exit 1
   ;;
 esac
