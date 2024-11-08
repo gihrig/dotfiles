@@ -1,0 +1,280 @@
+Setup on 2023 Mac Mini M2 Pro w/ macOS Sequoia
+
+Run dotfiles install see README.md
+
+Systems Settings that may not be configured though dotfiles
+
+Displays >
+  Resolution > 1280 x 800
+  Color Profile > Adobe RGB (1998)
+  Arrange as appropriate
+
+  Delete Old verification codes
+    Passwords > Password Options > Verification Codes > Delete After Use > On
+
+Software Updates
+  Settings > Automatic Updates > Click icon > verify all are On
+
+Notifications > Show previews > Always
+
+Appearance >
+  Appearance > Dark
+  Allow wallpaper tinting in windows > off (better contrast)
+  Show Scrollbars > Always
+  Jump to the spot that's clicked
+
+Wallpaper > Custom color (+) in Colors area at bottom of section
+  RGB Sliders: Red 95, Green: 132 Blue: 180
+  Hex: 5F84B4
+
+Control Center
+  Control center modules
+    Focus, Sound, Now Playing > Show When Active
+    Others > Don't Show in Menu Bar
+    Fast User Switching
+      Menu Bar > Don't Show
+      Show in Control Center > On
+    Menu Bar Only
+      Clock > Sat Aug 17 11:36PM
+      Spotlight > Don't Show in Menu Bar
+      Siri > Don't Show in Menu Bar
+      Time Machine > Show in Menu Bar
+
+Accessibility > Vision >
+  Display >
+    Autoplay animated images > Off
+    Text > Text Size > Preferred Reading Size (slider) > 14 pt
+      Set your preferred reading size... > All apps > Us Preferred Reading Size
+
+Zoom >
+  Use scroll gesture with modifier key to zoom > On
+  Modifier key for scroll gesture > ^Control
+  Zoom style > Full Screen
+    Choose Display > All
+  Zoom style > Advanced
+    Appearance
+      Zoomed image moves > When Pointer Reaches Edge <-- Behaves as "Near ..." Research >>>>>>>>>>>>>
+      Disable Universal Control while zoomed in > On
+      Zoom each display independently > Off
+    Controls
+      Use keyboard shortcuts to adjust zoom window > On
+    Follow Focus
+      Follow keyboard focus > Always
+      Move screen image when focus is > On screen edge
+  Hover Text > On <-- Doesn't work in all programs
+    Info icon
+      Activity modifier > Alt/Option
+      Triple-press modifier to set activation lock > Off
+
+    In macOS Sonoma with dual monitors:
+      System Settings > Zoom > Zoom style > Advanced > Appearance >
+      Zoomed image moves > When Pointer Reaches Edge
+        behaves as "Near screen edge".
+
+Siri and Spotlight
+  Ask Siri > Off
+  Spotlight > Search results - Disable (clear)
+    Calculator
+    Conversion
+    Definition
+    Fonts
+    Other
+    Siri Suggestions
+    Websites
+
+Privacy and Security
+  Location Services > on
+    Firefox
+    Flux
+    Maps
+    Weather
+    System Services > All on except Home kit
+    Analytics and Improvements > Off ?
+    Apple Advertising > Personalize
+
+Network > Right Click > Set service order: Drag ethernet to top
+
+Desktop & Dock
+  Minimize windows using > Scale effect
+  Double-click  a windows title bark to > Do Nothing
+  Minimize windows into application icon > Off
+  Automatically hide and show the Dock > On
+  Animate opening applications > Off
+  Show indicators for open applications > On
+  Show Suggestions and recent apps in Dock > Off
+
+  Desktop and Stage Manger
+    Show Items > both Off
+    Click wallpaper to reveal desktop > Only in Stage Manager
+
+  Stage Manager > Off
+  Widgets
+    Show Widgets > All Off
+    Widget style > Full-color
+    Use iPhone Widgets > Off
+    Default web browser > Firefox
+
+  Windows
+    Prefer tabs opening documents > Always
+    Ask to keep changes when closing documents > On
+    Close windows when quitting an application > Off
+
+  Mission Control
+    Automatically rearrange Spaces based on most recent use > Off
+    When switching ...to a Space open window > On
+    Group Windows by Application > On
+    Displays have separate spaces > Off
+
+    Shortcuts (Button)
+      Mission Control
+        Keyboard Shortcut > F9
+        Mouse Shortcut > Mouse Button 3
+      Application Windows
+        Keyboard Shortcut > F10
+        Mouse Shortcut > None
+      Show Desktop
+        Keyboard Shortcut > F11
+        Mouse Shortcut > None
+
+    Hot Corners (Button)
+      Lower-Right > Start Screen Saver
+
+Mouse >
+  Tacking speed > stop #5
+  Natural scrolling > Off
+  Secondary click > Click Right Side
+  Double-Click Speed > stop #8
+  Scrolling Speed > stop #3
+  Advanced > Pointer acceleration > On
+  Setup Bluetooth mouse > Pair (or use transceiver)
+
+  Mouse Keys > Pointer Control >
+    Mouse and Trackpad > Spring-loading > Off
+    Alternate control methods >
+      Mouse Keys > Off
+      icon >
+        Press the option key five times to toggle Mouse Keys > On
+	Ignore built-in trackpad... Off
+	Initial delay > stop #0
+	Maximum speed > stop #12
+
+Keyboard
+  Key repeat rate > Fast(est)
+  Delay until repeat > Short(est)
+  Press fn key to > Do Nothing
+  Keyboard Navigation > On
+  Text Input > Edit >
+    Show Input menu in menu bar > Off
+    Correct Spelling automatically > Off
+    Capitalize words automatically > Off
+    Show inline predictive text > Off
+    Add period with double-space > Off
+    Spelling > U.S. English
+    Use smart quotes and dashes > Off
+  Dictation > Off
+
+Screen Saver >
+  Show as Wallpaper > Off
+  Show on all Spaces > On
+    Shuffle Landscape > Continuously (At top after selecting screen saver)
+
+    Many Apple images collections are downloaded and stored
+    in /Library/Application Support/com.apple.idleassetsd/Customer
+      Contains .mov video screen saver files. Clean up as appropriate
+      Log out/in to update System Settings
+
+Lock Screen
+  Start screen saver when inactive > 20 min
+  Turn display off when inactive > 2hr
+  Require password after screen saver or display is turned off > After 4 hours
+  Show large clock > Lock screen
+  Show password hints > Off
+  Show Message when locked > Off
+  When Switching User >
+    Login window shows > Name and password
+    Show Sleep, Restart, and ShutDown buttons > On
+
+=========================================================
+
+Application notes:
+
+Terminal may be broken at this point (quits on startup)
+  1. Terminal > Settings > General > Shells open with > Command > /bin/zsh
+  2. % cd .config/dotfiles && ./install.sh all
+
+Apple Mail
+  Give SpamSieve Full Disk Access
+  Review SpamSeive > Help > Setting Up and using SpamSeive > 3 Using SpamSeive
+
+Reminders Column View
+  Reminders > Select list to view as columns (won’t work for Smart Lists) > Menu Bar View > as Columns.
+
+Create second desktop
+
+Dock
+  Add Remove Arrange
+  Finder        All Desktops - Left monitor
+  Path Finder   All Desktops - Right monitor
+  Firefox       Desktop one - Right Monitor
+  Mail          Desktop two - Right Monitor
+  Slack         Desktop one - Left Monitor
+  Discord       Desktop one - Left Monitor
+  Contacts      Desktop two - Left Monitor
+  Calendar      Desktop one - Left Monitor
+  Notes         Desktop one - Left Monitor
+  Reminders     Desktop one - Left Monitor
+  Freeform      Desktop two - Left Monitor
+  Messages      Desktop one - Left Monitor
+  Not in Dock
+    VS Code     Desktop one - Left Monitor
+    Numbers     Desktop one - Left Monitor
+    Pages       Desktop one - Left Monitor
+    Sequel Pro  Desktop one - Left Monitor
+    Terminal    Desktop one - Left Monitor
+    Wezterm     Desktop one - Left Monitor
+
+Finder
+  Settings > Sidebar > Set columns to display
+  Settings > Advanced >
+    Show all filename extensions
+    Remove items from trash after 30 days
+    Keep folders on top > in windows when sorting by name
+    When performing a search > Search the current folder
+  Settings > General >
+    Show these items on the desktop > clear all
+    New Finder windows show > Documents
+    Open folder in tabs instead of windows > Check
+  File > New Smart Folder > + > Parameters. Folder appears on desktop
+    Works like Smart Folders in Mail, but for files
+    Recents - Is a Smart Folder
+      For additional options press Alt/Option > Click ...
+  View >
+    Show Path Bar
+    Show Tab Bar
+    Show Status Bar
+
+Interactive Widgets - on desktop
+  Right-Click desktop > Edit Widgets > Drag Widget to Desktop (eg. Reminders)
+
+Video Overlay - Works in Zoom!
+  Click video camera icon in tool bar
+
+Web Apps on Dock
+  Safari > Open Site > File > Add to Dock
+
+Safari Profiles
+  Safari > Settings > Profiles > New Profile
+    Select profile from Safari icon right click
+      Uses separate cookies, etc. per profile, useful for multiple logins to same site
+
+Safari default search engine
+  Safari > Settings > Search > Search Engin > Duck Duck Go
+
+Stop trackers
+  Safari > Settings > Advanced > Use advanced tracking and fingerprint protection >
+    In all browsing in the dropdown
+
+iCloud Security
+  System Setting > iCloud >
+    Hide my email (requires iCloud+)
+    Advanced Data Protection > Turn On (requires iCloud+)
