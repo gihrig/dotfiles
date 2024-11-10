@@ -45,6 +45,7 @@ Configure macOS
 > - Choose look > Dark (light for Janis)
 > - Keyboard Setup Assistant > Continue > ANSI US
 > - Confirm email address as needed to complete setup
+> - Create Admin user > Admin
 2. Set Machine Name (updates User and Hostname) - System Settings > General > About
 3. Set Full Disk Access for terminal - System Settings > Privacy & Security > Full Disk Access > +
 4. Install Xcode from the App Store
@@ -59,34 +60,33 @@ Configure macOS
 > - % ./install.sh all
 8. Configure remaining macOS System Settings see Sequoia_Settings.txt
 9. Complete Homebrew setup requirements
-> - brew info sqlite \
 > - brew info mysql \
 > - - Add to /opt/hombrew/etc/my.cnf # Use external drive for data files
 > - - datadir=/Volumes/iCrumzData/iCrumz/MySQLData
 > - brew info fzf \
 > - brew info pkgx \
-10.  Configure applications\
+10. Configure applications\
 > - 1Password login and authorization \
 > - TorGuard login - Glen \
 > - Warp login - Janis \
 > - Firefox login - create account as needed \
 > - Firefox and Safari Install extensions see browser-extension-list.txt \
 > - Setup Apple Mail accounts
-> - Configure Spamseive (see usb key user/Library)
+> - Configure Spamseive (copy usb key user/Library/*)
+> - - Review SpamSieve Help > Setting Up and using Spamseive
 > - Setup Shortcat - Hot key CMD-Space \
 > - - System Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
 > - Default folder X install license key \
 > - Dropbox login \
 > - Beyond compare install license key \
+> - Setup Flux \
+> - VS Code sign in to github, snyk, phind, settings, codium, docker hub  \
+> - Open remaining "Third Party Apps" (see Brewfile) and configure as needed
 > - SoftRAID install license key\
 > - SuperDuper configure scheduled backups to G-SEQ-SD od J-SEQ-SD \
 > - Time Machine setup backup to G-SEQ-TM or J-SEQ-TM \
-> - Setup Flux \
-> - VS Code sign in to github, snyk, phind, settings, codium, docker hub  \
-> - Setup CheatSheet \
-> - Open remaining "Third Party Apps" (see Brewfile) and configure as needed
 
-11.  Backup Settings and keychain % .config/dotfiles/install.sh backup
+1.    Backup Settings and keychain % .config/dotfiles/install.sh backup
 
 ## Note
 >
