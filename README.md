@@ -10,7 +10,7 @@
 > Things you will need:
 > - Internet connection
 > - usb key with bootable installer
-> - Administrator user name and password
+> - Administrator user name and password (glen)
 > - - Password will be prompted several times throughout execution
 > - Apple ID and password for the administrator account (or create a new ID)
 > - - Items from App Store must be previously purchased or shared. see Brewfile > mas
@@ -70,7 +70,7 @@ Configure macOS
 > - TorGuard login - Glen \
 > - Warp login - Janis \
 > - Firefox login - create account as needed \
-> - Firefox and Safari Install extensions see browser-extension-list.txt \
+> - Firefox and Safari Login and install extensions see browser-extension-list.txt \
 > - Setup Apple Mail accounts
 > - Configure Spamseive (see usb key user/Library)
 > - Setup Shortcat - Hot key CMD-Space \
@@ -85,6 +85,19 @@ Configure macOS
 > - VS Code sign in to github, snyk, phind, settings, codium, docker hub  \
 > - Setup CheatSheet \
 > - Open remaining "Third Party Apps" (see Brewfile) and configure as needed
+> - Confirm iCloud sync for calendar and notes
+> - Create admin backup macOS user account
+> - Create user Janis and setup Family Sharing
+> - Copy from backup
+> - - ~/Library/Spelling/en
+> - - ~/Library/Application Support/SpamSieve
+> - - ~/Library/Preferences/com.c-command.SpamSieve.plist
+> - Open BB Edit file list
+> - Login to Discord and Slack
+> - Import Rust card deck into Anki
+> - Configure Macs Fan Control settings (core average, controlled fan speed 45 - 70)
+> - Configure DefaultFolderX Setup favorites
+> - Configure Finder Favorites
 
 11.  Backup Settings and keychain .config/dotfiles/install.sh backup
 
