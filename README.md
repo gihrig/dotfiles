@@ -70,12 +70,16 @@ Configure macOS
 > - TorGuard login - Glen \
 > - Warp login - Janis \
 > - Firefox login - create account as needed \
-> - Firefox and Safari Login and install extensions see browser-extension-list.txt \
+> - Firefox and Safari Install extensions see browser-extension-list.txt \
+> - Configure Alfred
+> - - Hide menubar icon, Set Appearance to Alfred macOS Dark \
+> - - Create Web Search for acr http://acronymfinder.com and ety http://etymology.com \
+> - - Rename Dictionary keyword as 'def' \
 > - Setup Apple Mail accounts
 > - Configure Spamseive (copy usb key user/Library/*)
 > - - Review SpamSieve Help > Setting Up and using Spamseive
 > - Setup Shortcat - Hot key CMD-Space \
-> - - System Settings > Spotlight > Keyboard shortcuts > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
+> - - System Settings > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
 > - Default folder X install license key \
 > - Dropbox login \
 > - Beyond compare install license key \
