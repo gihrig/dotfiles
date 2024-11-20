@@ -85,15 +85,16 @@ Configure macOS
 > - Beyond compare install license key \
 > - Setup Flux \
 > - VS Code sign in to github, snyk, phind, settings, codium, docker hub  \
+> - Setup KeyClu \
 > - Open remaining "Third Party Apps" (see Brewfile) and configure as needed
 > - SoftRAID install license key\
-> - SuperDuper configure scheduled backups to G-SEQ-SD od J-SEQ-SD \
-> - Time Machine setup backup to G-SEQ-TM or J-SEQ-TM \
+> - SuperDuper configure scheduled backups to Glen-SD or Janis-SD \
+> - Time Machine setup backup to Glen-TM or Janis-TM \
 > - Confirm iCloud sync for calendar and notes
 > - Create admin backup macOS user account
 > - Create user Janis and setup Family Sharing
 > - Copy from backup
-> - - ~/Library/Spelling/en
+> - - ~/Library/Group\ Containers/group.com.apple.AppleSpell/Library/Spelling/LocalDictionary
 > - - ~/Library/Application Support/SpamSieve
 > - - ~/Library/Preferences/com.c-command.SpamSieve.plist
 > - Open BB Edit file list
