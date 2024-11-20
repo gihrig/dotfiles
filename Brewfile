@@ -58,7 +58,6 @@ brew "noti" # utility to display notifications from scripts
 ### brew "neovim" # A better vim
 brew "pkgxdev/made/pkgx" # npx, but for anything
 brew "python" # python (latest)
-cask "qlimagesize" # Display image info and preview unsupported formats in QuickLook
 cask "qlmarkdown" # Quick Look generator for Markdown files
 cask "qlvideo" # Thumbnails, static previews, cover art and metadata for video files
 brew "ripgrep" # very fast file searcher
@@ -101,6 +100,7 @@ cask "firefox"
 cask "flux"
 cask "gitup"
 cask "imageoptim"
+cask "keyclu" # Show keyboard shortcuts
 cask "macs-fan-control"
 cask "path-finder"
 cask "sequel-ace"
