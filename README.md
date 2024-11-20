@@ -10,7 +10,7 @@
 > Things you will need:
 > - Internet connection
 > - usb key with bootable installer
-> - Administrator user name and password
+> - Administrator user name and password (glen)
 > - - Password will be prompted several times throughout execution
 > - Apple ID and password for the administrator account (or create a new ID)
 > - - Items from App Store must be previously purchased or shared. see Brewfile > mas
@@ -70,7 +70,7 @@ Configure macOS
 > - TorGuard login - Glen \
 > - Warp login - Janis \
 > - Firefox login - create account as needed \
-> - Firefox and Safari Install extensions see browser-extension-list.txt \
+> - Firefox and Safari Login and install extensions see browser-extension-list.txt \
 > - Setup Apple Mail accounts
 > - Configure Spamseive (copy usb key user/Library/*)
 > - - Review SpamSieve Help > Setting Up and using Spamseive
@@ -85,6 +85,19 @@ Configure macOS
 > - SoftRAID install license key\
 > - SuperDuper configure scheduled backups to G-SEQ-SD od J-SEQ-SD \
 > - Time Machine setup backup to G-SEQ-TM or J-SEQ-TM \
+> - Confirm iCloud sync for calendar and notes
+> - Create admin backup macOS user account
+> - Create user Janis and setup Family Sharing
+> - Copy from backup
+> - - ~/Library/Spelling/en
+> - - ~/Library/Application Support/SpamSieve
+> - - ~/Library/Preferences/com.c-command.SpamSieve.plist
+> - Open BB Edit file list
+> - Login to Discord and Slack
+> - Import Rust card deck into Anki
+> - Configure Macs Fan Control settings (core average, controlled fan speed 45 - 70)
+> - Configure DefaultFolderX Setup favorites
+> - Configure Finder Favorites
 
 1.    Backup Settings and keychain % .config/dotfiles/install.sh backup
 
