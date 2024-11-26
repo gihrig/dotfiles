@@ -205,7 +205,8 @@ setup_homebrew() {
   if test ! "$(command -v brew)"; then
     info "Homebrew not installed. Installing."
     # Run as a login shell (non-interactive) so that the script doesn't pause for user input
-    sudo curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | bash --login
+    # Or run installer See: https://github.com/Homebrew/brew/releases/
+    curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash --login
   fi
 
   if [ "$(uname)" == "Linux" ]; then
