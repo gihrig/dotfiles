@@ -109,7 +109,6 @@ cask "slack"
 cask "softraid"
 cask "spamsieve"
 cask "superduper"
-cask "torguard"
 cask "visual-studio-code"
 cask "wezterm" # a better terminal emulator
 cask "zoom"
