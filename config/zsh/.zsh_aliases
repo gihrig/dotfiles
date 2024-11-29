@@ -59,3 +59,27 @@ if [[ -n "$(command -v nvim)" ]]; then
     # immediately open to fugitive's status screen
     alias vimg="nvim +Ge:"
 fi
+
+# operation shortcuts
+alias sha256='shasum --portable -a 256' # Usage: "sha256 myfile" or "echo -n your_desired_password | sha256" see man shasum
+alias sha512='shasum --portable -a 512' # Usage: "sha512 myfile" or "echo -n your_desired_password | sha512" see man shasum
+
+alias backup='~/arkScripts/arkDump.sh'
+alias restore='~/arkScripts/arkLoad.sh'
+alias prepbk='source ~/iczScripts/prepbk.sh'
+alias dump='~/iczScripts/iczDump.sh'
+alias load='~/iczScripts/iczLoad.sh'
+alias nginxctl='~/iczScripts/iczNginx.sh'
+alias gitrev='~/iczScripts/gitrev.sh'
+alias chkcollection='~/iczScripts/iczChkCollection.sh'
+
+alias ejectall='~/ejectall.sh'
+alias stack='./stack.sh'
+
+alias stats='git diff --stat HEAD^ HEAD'
+
+alias sqlite='sqlite3'
+
+alias e2e-test='cargo leptos end-to-end'
+alias e2e-release='cargo leptos end-to-end --release'
+alias e2e-report='open ./end2end/playwright-report/index.html'
