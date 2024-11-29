@@ -134,7 +134,9 @@ setup_symlinks() {
     mkdir -p "$data_home"
   fi
 
-  config_files=$(find "$DOTFILES/config" -maxdepth 1 2>/dev/null)
+  config_files=$(find "$DOTFILES/config" -mindepth 1 -maxdepth 1 2>/dev/null)
+  # echo "config_files: "
+  # echo "$config_files"
   for config in $config_files; do
     target="$config_home/$(basename "$config")"
     if [ -e "$target" ]; then
@@ -335,4 +337,4 @@ all)
 esac
 
 echo
-success "Done. Now Reboot!"
+success "Done. Restart your terminal for changes to take effect."
