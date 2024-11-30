@@ -1,7 +1,10 @@
 #!/usr/bin/env zsh
 #
-autoload -Uz compinit
-compinit
+# initialize autocomplete
+# 'compinit -u' prevents secure folders check causing errors for other users
+# Duplicated in .zshrc
+autoload -Uz compinit -u
+compinit -u
 
 c() {
   cd $CODE_DIR/$1
@@ -132,4 +135,3 @@ zfetch() {
     cd $cwd
   fi
 }
-

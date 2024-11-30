@@ -7,8 +7,10 @@ source "$ZDOTDIR/.zsh_functions"
 ########################################################
 
 # initialize autocomplete
+# 'compinit -u' prevents secure folders check causing errors for other users
+# Duplicated in .zsh_functions
 autoload -U compinit add-zsh-hook
-compinit
+compinit -u
 
 prepend_path /usr/local/opt/grep/libexec/gnubin
 prepend_path /usr/local/sbin
