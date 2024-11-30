@@ -7,7 +7,7 @@ source "$ZDOTDIR/.zsh_functions"
 ########################################################
 
 # initialize autocomplete
-# 'compinit -u' prevents secure folders check causing errors for other users
+# 'compinit -u' prevent secure folders check causing errors in multi-user env
 # Duplicated in .zsh_functions
 autoload -U compinit add-zsh-hook
 compinit -u

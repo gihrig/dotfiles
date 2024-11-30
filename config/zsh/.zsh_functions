@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 #
 # initialize autocomplete
-# 'compinit -u' prevents secure folders check causing errors for other users
+# 'compinit -u' prevent secure folders check causing errors in multi-user env
 # Duplicated in .zshrc
 autoload -Uz compinit -u
 compinit -u
