@@ -10,7 +10,7 @@
 > Things you will need:
 > - Internet connection
 > - usb key with bootable installer
-> - Administrator user name and password (glen)
+> - Administrator user name and password
 > - - Password will be prompted several times throughout execution
 > - Apple ID and password for the administrator account (or create a new ID)
 > - - Items from App Store must be previously purchased or shared. see Brewfile > mas
@@ -50,9 +50,9 @@ Configure macOS
 3. Set Full Disk Access for terminal - System Settings > Privacy & Security > Full Disk Access > +
 4. Install Xcode from the App Store
 5. Copy usb key user/.ssh > user directory
-6. Copy arkScript and iczScript from usb key > user directory - Glen
+6. Copy arkScript and iczScript from usb key > user directory
 7. Open terminal and run these commands
-> - % sudo vifs > o > (paste usb key user/etc/fstab content) > ESC > ZZ - Glen
+> - % sudo vifs > o > (paste usb key user/etc/fstab content) > ESC > ZZ
 > - % xcode-select --install
 > - % git --version #(agree to Apple terms)
 > - % ssh git@github.com # A github ssh key must be installed
@@ -91,7 +91,7 @@ Configure macOS
 > - Time Machine setup backup to Glen-TM or Janis-TM \
 > - Confirm iCloud sync for calendar and notes
 > - Create admin backup macOS user account
-> - Create user Janis and setup Family Sharing
+> - Create users Glen Janis and setup Family Sharing
 > - Copy from backup
 > - - ~/Library/Group\ Containers/group.com.apple.AppleSpell/Library/Spelling/LocalDictionary
 > - - ~/Library/Application Support/SpamSieve
