@@ -269,6 +269,38 @@ setup_macos() {
   fi
 }
 
+backup_spell() {
+  title "Backing up macos spellcheck dictionary"
+  if [[ "$(uname)" == "Darwin" ]]; then
+
+    target="$HOME/Library/Group Containers/group.com.apple.AppleSpell/Library/Spelling/"
+
+    BACKUP_DIR=$HOME/.config/dotfiles/macos/Spelling/
+
+    cp -pR "$target" "$BACKUP_DIR"
+
+    info "Spelling dictionary backed up to $BACKUP_DIR"
+  else
+    warning "macOS not detected. Skipping."
+  fi
+}
+
+setup_spell() {
+  title "Restoring macos spellcheck dictionary"
+  if [[ "$(uname)" == "Darwin" ]]; then
+
+    target="$HOME/Library/Group Containers/group.com.apple.AppleSpell/Library/Spelling/"
+
+    BACKUP_DIR=$HOME/.config/dotfiles/macos/Spelling/
+
+    cp -pR  "$BACKUP_DIR" "$target"
+
+    info "Spelling dictionary restored to $target"
+  else
+    warning "macOS not detected. Skipping."
+  fi
+}
+
 setup_rust() {
   title "Configuring rust toolchain"
   rustup-init
@@ -306,6 +338,9 @@ terminfo)
   ;;
 macos)
   setup_macos
+  ;;
+spell)
+  setup_spell
   ;;
 rust)
   setup_rust

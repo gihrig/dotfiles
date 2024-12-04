@@ -92,8 +92,7 @@ Configure macOS
 > - Confirm iCloud sync for calendar and notes
 > - Create admin backup macOS user account
 > - Create users Glen Janis and setup Family Sharing
-> - Copy from backup
-> - - ~/Library/Group\ Containers/group.com.apple.AppleSpell/Library/Spelling/LocalDictionary
+> - Install Spelling dictionary % ./install.sh spell
 > - - ~/Library/Application Support/SpamSieve
 > - - ~/Library/Preferences/com.c-command.SpamSieve.plist
 > - Open BB Edit file list
