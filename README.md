@@ -67,8 +67,7 @@ Configure macOS
 > - brew info pkgx \
 10. Configure applications\
 > - 1Password login and authorization \
-> - TorGuard login - Glen \
-> - Warp login - Janis \
+> - Warp login - Configure Split Tunnel \
 > - Firefox login - create account as needed \
 > - Firefox and Safari Install extensions see browser-extension-list.txt \
 > - Configure Alfred
