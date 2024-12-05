@@ -93,10 +93,7 @@ Configure macOS
 > - SoftRAID install license key
 > - SuperDuper configure scheduled backups to Glen-SD or Janis-SD
 > - Time Machine setup backup to Glen-TM or Janis-TM
-
-> - Install BB Edit settings
-> - - ~/Library/Application Support/BBEdit
-> - - ~/Library/Containers/com.barebones.bbedit/Data/Saved Application State.appstate
+> - Install BB Edit settings - ./install.sh bbedit
 > - Login to Discord and Slack
 > - Import Anki Rust card deck from dotfiles/anki
 > - Configure Macs Fan Control settings (core average, controlled fan speed 45 - 70)
