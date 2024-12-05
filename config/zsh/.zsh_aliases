@@ -64,14 +64,14 @@ fi
 alias sha256='shasum --portable -a 256' # Usage: "sha256 myfile" or "echo -n your_desired_password | sha256" see man shasum
 alias sha512='shasum --portable -a 512' # Usage: "sha512 myfile" or "echo -n your_desired_password | sha512" see man shasum
 
-alias backup='~/arkScripts/arkDump.sh'
-alias restore='~/arkScripts/arkLoad.sh'
-alias prepbk='source ~/iczScripts/prepbk.sh'
-alias dump='~/iczScripts/iczDump.sh'
-alias load='~/iczScripts/iczLoad.sh'
-alias nginxctl='~/iczScripts/iczNginx.sh'
-alias gitrev='~/iczScripts/gitrev.sh'
-alias chkcollection='~/iczScripts/iczChkCollection.sh'
+alias backup='~/.config/arkScripts/arkDump.sh'
+alias restore='~/.config/arkScripts/arkLoad.sh'
+alias prepbk='source ~/.config/iczScripts/prepbk.sh'
+alias dump='~/.config/iczScripts/iczDump.sh'
+alias load='~/.config/iczScripts/iczLoad.sh'
+alias nginxctl='~/.config/iczScripts/iczNginx.sh'
+alias gitrev='~/.config/iczScripts/gitrev.sh'
+alias chkcollection='~/.config/iczScripts/iczChkCollection.sh'
 
 alias ejectall='~/ejectall.sh'
 alias stack='./stack.sh'
