@@ -341,6 +341,46 @@ setup_spam() {
   fi
 }
 
+backup_bbedit() {
+  title "Backing up BBEdit settings"
+  if [[ "$(uname)" == "Darwin" ]]; then
+
+    target1="$HOME/Library/Application Support/BBEdit/"
+    target2="$HOME/Library/Containers/com.barebones.bbedit/Data/Saved Application State.appstate"
+
+    BACKUP_DIR1="$HOME/.config/dotfiles/bbedit/BBEdit/"
+    BACKUP_DIR2="$HOME/.config/dotfiles/bbedit/"
+
+    cp -pR "$target1" "$BACKUP_DIR1"
+    cp -pR "$target2" "$BACKUP_DIR2"
+
+    info "BBEdit configuration backed up to $BACKUP_DIR1"
+    info "BBedit settings backed up to $BACKUP_DIR2"
+  else
+    warning "macOS not detected. Skipping."
+  fi
+}
+
+setup_bbedit() {
+  title "Restoring BBEdit setings"
+  if [[ "$(uname)" == "Darwin" ]]; then
+
+    target1="$HOME/Library/Application Support/BBEdit/"
+    target2="$HOME/Library/Containers/com.barebones.bbedit/Data/"
+
+    BACKUP_DIR1="$HOME/.config/dotfiles/bbedit/BBEdit/"
+    BACKUP_DIR2="$HOME/.config/dotfiles/bbedit/Saved Application State.appstate"
+
+    cp -pR "$BACKUP_DIR1" "$target1"
+    cp -pR "$BACKUP_DIR2" "$target2"
+
+    info "BBEdit configuration restored from $BACKUP_DIR1"
+    info "BBedit settings restored from $BACKUP_DIR2"
+  else
+    warning "macOS not detected. Skipping."
+  fi
+}
+
 setup_rust() {
   title "Configuring rust toolchain"
   read -p "This may take 30 minutes or more. Continue? (y/n) " yn
@@ -403,6 +443,9 @@ backup_spam)
   ;;
 bbedit)
   setup_bbedit
+  ;;
+backup_bbedit)
+  backup_bbedit
   ;;
 rust)
   setup_rust
