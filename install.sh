@@ -301,6 +301,46 @@ setup_spell() {
   fi
 }
 
+backup_spam() {
+  title "Backing up SpamSieve corpus"
+  if [[ "$(uname)" == "Darwin" ]]; then
+
+    target1="$HOME/Library/Application Support/SpamSieve/"
+    target2="$HOME/Library/Preferences/com.c-command.SpamSieve.plist"
+
+    BACKUP_DIR1="$HOME/.config/dotfiles/macos/spam/SpamSieve/"
+    BACKUP_DIR2="$HOME/.config/dotfiles/macos/spam/"
+
+    cp -pR "$target1" "$BACKUP_DIR1"
+    cp -pR "$target2" "$BACKUP_DIR2"
+
+    info "SpamSieve corpus backed up to $BACKUP_DIR1"
+    info "SpamSieve settings backed up to $BACKUP_DIR2"
+  else
+    warning "macOS not detected. Skipping."
+  fi
+}
+
+setup_spam() {
+  title "Restoring SpamSieve corpus"
+  if [[ "$(uname)" == "Darwin" ]]; then
+
+    target1="$HOME/Library/Application Support/SpamSieve/"
+    target2="$HOME/Library/Preferences/"
+
+    BACKUP_DIR1="$HOME/.config/dotfiles/macos/spam/SpamSieve/"
+    BACKUP_DIR2="$HOME/.config/dotfiles/macos/spam/com.c-command.SpamSieve.plist"
+
+    cp -pR "$BACKUP_DIR1" "$target1"
+    cp -pR "$BACKUP_DIR2" "$target2"
+
+    info "SpamSieve corpus restored to $target1"
+    info "SpamSieve settings restored to $target2"
+  else
+    warning "macOS not detected. Skipping."
+  fi
+}
+
 setup_rust() {
   title "Configuring rust toolchain"
   rustup-init
@@ -342,6 +382,18 @@ macos)
 spell)
   setup_spell
   ;;
+backup_spell)
+  backup_spell
+  ;;
+spam)
+  setup_spam
+  ;;
+backup_spam)
+  backup_spam
+  ;;
+bbedit)
+  setup_bbedit
+  ;;
 rust)
   setup_rust
   ;;
@@ -355,18 +407,27 @@ all)
   setup_rust
   ;;
 *)
-  info "\nUsage: $(basename "$0") {backup|clean|link|copy|git|homebrew|shell|terminfo|macos|rust|all}\n"
-  echo "  backup   - backup existing symlinks and macos settings"
-  echo "  clean    - remove existing symlinks"
-  echo "  link     - create symlinks"
-  echo "  copy     - copy config files"
-  echo "  git      - setup git"
-  echo "  homebrew - setup homebrew"
-  echo "  shell    - setup shell"
-  echo "  terminfo - setup terminfo"
-  echo "  macos    - setup macos"
-  echo "  rust     - setup rust toolchain"
-  echo "  all      - setup everything"
+  title "Usage: $(basename "$0") {backup|clean|link|copy|git|homebrew|shell|terminfo|macos|all}"
+  echo "  backup       - backup existing symlinks and macos settings"
+  echo "  clean        - remove existing symlinks"
+  echo "  link         - create symlinks"
+  echo "  copy         - copy config files"
+  echo "  git          - setup git"
+  echo "  homebrew     - setup homebrew"
+  echo "  shell        - setup shell"
+  echo "  terminfo     - setup terminfo"
+  echo "  macos        - setup macos"
+  echo "  all          - setup everything"
+  info "\nApplications: $(basename "$0") {spell|spam|bbedit|rust|apps}\n"
+  echo "  spell        - restore macOS spellcheck dictionary"
+  echo "  backup_spell - backup macOS spellcheck dictionary"
+  echo "  spam         - restore SpamSieve dictionary"
+  echo "  backup_spam  - backup SpamSieve dictionary"
+  echo "  bbedit       - restore BBEdit settings"
+  echo "  backup_bb    - backup BBEdit settings"
+  echo "  rust         - setup rust toolchain"
+  echo "  apps         - setup/restore all applications"
+
   exit 1
   ;;
 esac
