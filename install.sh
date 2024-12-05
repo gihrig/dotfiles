@@ -343,12 +343,22 @@ setup_spam() {
 
 setup_rust() {
   title "Configuring rust toolchain"
-  rustup-init
+  read -p "This may take 30 minutes or more. Continue? (y/n) " yn
+  case $yn in
+    [yY]* )
 
-  echo
-  title "Installing rust packages"
-  source "$HOME/.cargo/env"
-  cat $DOTFILES/rust/cargo_packages.txt | xargs cargo install
+    rustup-init
+
+    echo
+    title "Installing rust packages"
+    source "$HOME/.cargo/env"
+    cat $DOTFILES/rust/cargo_packages.txt | xargs cargo install
+    ;;
+
+    [nN]* ) echo "Exiting..."; exit;;
+    * ) echo "Please answer yes or no.";;
+  esac
+
 }
 
 case "$1" in
@@ -418,7 +428,8 @@ all)
   echo "  terminfo     - setup terminfo"
   echo "  macos        - setup macos"
   echo "  all          - setup everything"
-  info "\nApplications: $(basename "$0") {spell|spam|bbedit|rust|apps}\n"
+  echo ""
+  info "Applications: $(basename "$0") {spell|spam|bbedit|rust|apps}\n"
   echo "  spell        - restore macOS spellcheck dictionary"
   echo "  backup_spell - backup macOS spellcheck dictionary"
   echo "  spam         - restore SpamSieve dictionary"
@@ -433,4 +444,4 @@ all)
 esac
 
 echo
-success "Done. Restart your terminal for changes to take effect."
+success "Done."
