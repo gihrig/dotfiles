@@ -60,49 +60,54 @@ Configure macOS
 > - % ./install.sh all
 8. Configure remaining macOS System Settings see Sequoia_Settings.txt
 9. Complete Homebrew setup requirements
-> - brew info mysql \
+> - brew info mysql
 > - - Add to /opt/hombrew/etc/my.cnf # Use external drive for data files
 > - - datadir=/Volumes/iCrumzData/iCrumz/MySQLData
-> - brew info fzf \
-> - brew info pkgx \
-10. Configure applications\
-> - 1Password login and authorization \
-> - Warp login - Configure Split Tunnel \
-> - Firefox login - create account as needed \
-> - Firefox and Safari Install extensions see browser-extension-list.txt \
+> - brew info fzf
+> - brew info pkgx
+10. Configure applications
+> - 1Password login and authorization
+> - Warp login - Configure Split Tunnel
+> - Firefox login - create account as needed
+> - Firefox and Safari Install extensions see browser-extension-list.txt
 > - Configure Alfred
-> - - Hide menubar icon, Set Appearance to Alfred macOS Dark \
-> - - Create Web Search for acr http://acronymfinder.com and ety http://etymology.com \
-> - - Rename Dictionary keyword as 'def' \
+> - - Hide menubar icon, Set Appearance to Alfred macOS Dark
+> - - Create Web Search for acr http://acronymfinder.com and ety http://etymology.com
+> - - Rename Dictionary keyword as 'def'
 > - Setup Apple Mail accounts
 > - Configure Spamseive (copy usb key user/Library/*)
 > - - Review SpamSieve Help > Setting Up and using Spamseive
-> - Setup Shortcat - Hot key CMD-Space \
-> - - System Settings > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space\
-> - Default folder X install license key \
-> - Dropbox login \
-> - Beyond compare install license key \
-> - Setup Flux \
-> - VS Code sign in to github, snyk, phind, settings, codium, docker hub  \
-> - Setup KeyClu \
+> - Setup Shortcat - Hot key CMD-Space
+> - - System Settings > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space
+> - Default folder X install license key
+> - Dropbox login
+> - Beyond compare install license key
+> - Setup Flux
+> - VS Code sign in to github, snyk, phind, settings, codium, docker hub
+> - Setup KeyClu
 > - Open remaining "Third Party Apps" (see Brewfile) and configure as needed
-> - SoftRAID install license key\
-> - SuperDuper configure scheduled backups to Glen-SD or Janis-SD \
-> - Time Machine setup backup to Glen-TM or Janis-TM \
+> - SoftRAID install license key
+> - SuperDuper configure scheduled backups to Glen-SD or Janis-SD
+> - Time Machine setup backup to Glen-TM or Janis-TM
 > - Confirm iCloud sync for calendar and notes
 > - Create admin backup macOS user account
 > - Create users Glen Janis and setup Family Sharing
 > - Install Spelling dictionary % ./install.sh spell
+> - Install SpamSieve corpus
 > - - ~/Library/Application Support/SpamSieve
 > - - ~/Library/Preferences/com.c-command.SpamSieve.plist
-> - Open BB Edit file list
+> - Install BB Edit settings
+> - - ~/Library/Application Support/BBEdit
+> - - ~/Library/Containers/com.barebones.bbedit/Data/Saved Application State.appstate
 > - Login to Discord and Slack
 > - Import Rust card deck into Anki
 > - Configure Macs Fan Control settings (core average, controlled fan speed 45 - 70)
 > - Configure DefaultFolderX Setup favorites
 > - Configure Finder Favorites
+> - Install EMEETlink https://emeet.com/pages/software-service-downloads
 
-1.    Backup Settings and keychain % .config/dotfiles/install.sh backup
+11.  Backup Settings and keychain % .config/dotfiles/install.sh backup
+> - % .config/dotfiles/install.sh for additional backup procedures
 
 ## Note
 >
