@@ -1,0 +1,19 @@
+#
+# Warning - this file should only be modified with vifs(8)
+#
+# Failure to do so is unsupported and may be destructive.
+#
+# External drives not to be mounted at login
+
+UUID=CB816A17-08C7-3C67-B413-1754776096C2 none hfs rw,noauto # GLEN_DATA
+UUID=6AA36F8D-5A38-3286-81BD-10746D7C4543 none hfs rw,noauto # JANIS-DATA
+# UUID=0C66B012-581F-48D4-8511-995A068147F0 none apfs rw,noauto # J-SON-TM
+# UUID=0792524C-7835-47A3-820B-1F2978744915 none apfs rw,noauto # J-SON-SD
+UUID=118EE3D3-8DCF-4659-B693-D96DEEC6B70D none apfs rw,noauto # G-SON-SD
+UUID=046D004D-7F91-4394-8EAA-1E86441622C3 none apfs rw,noauto # G-MON-SD
+UUID=209CB414-37C6-3A5B-ACF9-A46FD8FAFA75 none hfs rw,noauto # iCrumzData
+UUID=1AD71E70-F0A6-31B7-B756-74926645B26B none hfs rw,noauto # EAGemsData
+UUID=5F35448D-91A9-3794-B164-3F71CA8391A3 none hfs rw,noauto # ArkadiasData
+UUID=D5B36433-03EE-32BA-8923-377E93ECA4D9 none hfs rw,noauto # ArkadiasChoiceData
+UUID=3C4FEB93-C074-3538-AF3A-71878EDDD89E none hfs rw,noauto # ArkadiaSystemsData
+UUID=C3D06AE9-4C47-3BEC-8B69-909B70A5BFDB none hfs rw,noauto # NaturalHealthyEatingData
