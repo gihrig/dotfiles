@@ -9,14 +9,15 @@
 > This utility is designed to run on a fresh macOS install: \
 > Things you will need:
 > - Internet connection
-> - usb key with bootable installer
+> - usb key with bootable installer (optional)
 > - Administrator user name and password
 > - - Password will be prompted several times throughout execution
 > - Apple ID and password for the administrator account (or create a new ID)
 > - - Items from App Store must be previously purchased or shared. see Brewfile > mas
 > - - Terminal used to run this script must have full disk access
 > - ssh key for GitHub account
-> - Passphrase for Github ssh key
+> - - Passphrase for Github ssh key
+> - 1Password login, password and secret key for each user
 > - '%' denotes commands executed in the terminal
 > - 'usb key' denotes the setup usb key
 >
@@ -28,7 +29,7 @@ Configure macOS
   https://support.apple.com/en-us/102664
 
 >
-1. Transfer or Reset
+> - Transfer or Reset
 > - Empty Trash (Transfer or Reset does not!)
 > - System Settings > Transfer or Reset > Erase All Content and Settings
 > - - Alternatively boot USB installer to Recovery OS and erase Macintosh HD using Disc Utility
@@ -46,36 +47,39 @@ Configure macOS
 > - Keyboard Setup Assistant > Continue > ANSI US
 > - Confirm email address as needed to complete setup
 > - Create Admin user > Admin
-2. Set Machine Name (updates User and Hostname) - System Settings > General > About
-3. Set Full Disk Access for terminal - System Settings > Privacy & Security > Full Disk Access > +
-4. Install Xcode from the App Store
-5. Copy usb key user/.ssh > user directory
-6. Copy arkScript and iczScript from usb key > user directory
-7. Open terminal and run these commands
-> - % sudo vifs > o > (paste usb key user/etc/fstab content) > ESC > ZZ
-> - % xcode-select --install
-> - % git --version #(agree to Apple terms)
-> - % ssh git@github.com # A github ssh key must be installed
-> - % git clone git@github.com:gihrig/dotfiles.git ~/.config/dotfiles && cd ~/.config/dotfiles
-> - % ./install.sh all
-8. Configure remaining macOS System Settings see Sequoia_Settings.txt
-9. Complete Homebrew setup requirements
-> - brew info mysql
-> - - Add to /opt/hombrew/etc/my.cnf # Use external drive for data files
+> - Set Machine Name (updates User and Hostname) - System Settings > General > About
+> - Set Full Disk Access for terminal - System Settings > Privacy & Security > Full Disk Access > +
+> - Install Xcode from the App Store
+> - Copy usb key user/.ssh > user directory
+> - Open terminal and run these commands
+> - - % sudo vifs > o > (paste macos/etc/fstab content) > ESC > ZZ
+> - - % xcode-select --install
+> - - % git --version #(agree to Apple terms)
+> - - % ssh git@github.com # A github ssh key must be installed
+> - - % git clone git@github.com:gihrig/dotfiles.git ~/.config/dotfiles && cd ~/.config/dotfiles
+> - Create users Glen and Janis and setup Family Sharing
+> - - % ./install.sh all
+> - Configure remaining macOS System Settings see Sequoia_Settings.txt
+> - Confirm iCloud sync for calendar and notes and contacts
+> - Install Spelling dictionary % ./install.sh spell
+> - Complete Homebrew setup requirements
+> - - brew info mysql
+> - - add to /opt/hombrew/etc/my.cnf # Use external drive for data files
 > - - datadir=/Volumes/iCrumzData/iCrumz/MySQLData
-> - brew info fzf
-> - brew info pkgx
-10. Configure applications
-> - 1Password login and authorization
+> - - brew info fzf
+> - - brew info pkgx
+> - 1Password login and usb key secret key
 > - Warp login - Configure Split Tunnel
 > - Firefox login - create account as needed
 > - Firefox and Safari Install extensions see browser-extension-list.txt
+> - - Review Firefox settings
+> - - Review Firefox and Safari 1Password Extensions
 > - Configure Alfred
 > - - Hide menubar icon, Set Appearance to Alfred macOS Dark
 > - - Create Web Search for acr http://acronymfinder.com and ety http://etymology.com
 > - - Rename Dictionary keyword as 'def'
 > - Setup Apple Mail accounts
-> - Configure Spamseive (copy usb key user/Library/*)
+> - Install SpamSieve corpus and settings % ./install.sh spam
 > - - Review SpamSieve Help > Setting Up and using Spamseive
 > - Setup Shortcat - Hot key CMD-Space
 > - - System Settings > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space
@@ -84,29 +88,23 @@ Configure macOS
 > - Beyond compare install license key
 > - Setup Flux
 > - VS Code sign in to github, snyk, phind, settings, codium, docker hub
-> - Setup KeyClu
+> - Setup KeyClu - Tap and Hold CMD to activate
 > - Open remaining "Third Party Apps" (see Brewfile) and configure as needed
 > - SoftRAID install license key
 > - SuperDuper configure scheduled backups to Glen-SD or Janis-SD
 > - Time Machine setup backup to Glen-TM or Janis-TM
-> - Confirm iCloud sync for calendar and notes
-> - Create admin backup macOS user account
-> - Create users Glen Janis and setup Family Sharing
-> - Install Spelling dictionary % ./install.sh spell
-> - Install SpamSieve corpus
-> - - ~/Library/Application Support/SpamSieve
-> - - ~/Library/Preferences/com.c-command.SpamSieve.plist
+
 > - Install BB Edit settings
 > - - ~/Library/Application Support/BBEdit
 > - - ~/Library/Containers/com.barebones.bbedit/Data/Saved Application State.appstate
 > - Login to Discord and Slack
-> - Import Rust card deck into Anki
+> - Import Anki Rust card deck from dotfiles/anki
 > - Configure Macs Fan Control settings (core average, controlled fan speed 45 - 70)
 > - Configure DefaultFolderX Setup favorites
 > - Configure Finder Favorites
 > - Install EMEETlink https://emeet.com/pages/software-service-downloads
 
-11.  Backup Settings and keychain % .config/dotfiles/install.sh backup
+> - Backup Settings and keychain % .config/dotfiles/install.sh backup
 > - % .config/dotfiles/install.sh for additional backup procedures
 
 ## Note
@@ -354,7 +352,7 @@ different versions of Node.
 > Neovim-specific and (mostly) written in [Lua](https://www.lua.org/). `vim` is
 > also set up as an alias to `nvim` to help with muscle memory.
 
-The simplest way to install Neovim is to install it from homebrew.
+The simplest way to install Neovim is to install it using homebrew.
 
 ```bash
 brew install neovim
