@@ -51,7 +51,7 @@ Configure macOS
 > - Set Full Disk Access for terminal - System Settings > Privacy & Security > Full Disk Access > +
 > - Install Xcode from the App Store
 > - Copy usb key user/.ssh > user directory
-> - Open terminal and run these commands
+> - Open terminal and run these commands:
 > - - % sudo vifs > o > (paste macos/etc/fstab content) > ESC > ZZ
 > - - % xcode-select --install
 > - - % git --version #(agree to Apple terms)
@@ -71,9 +71,9 @@ Configure macOS
 > - 1Password login and usb key secret key
 > - Warp login - Configure Split Tunnel
 > - Firefox login - create account as needed
-> - Firefox and Safari Install extensions see browser-extension-list.txt
 > - - Review Firefox settings
-> - - Review Firefox and Safari 1Password Extensions
+> - - Firefox and Safari Install extensions see browser-extension-list.txt
+> - - Firefox and Safari review 1Password Extensions
 > - Configure Alfred
 > - - Hide menubar icon, Set Appearance to Alfred macOS Dark
 > - - Create Web Search for acr http://acronymfinder.com and ety http://etymology.com

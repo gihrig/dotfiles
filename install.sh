@@ -362,7 +362,7 @@ backup_bbedit() {
 }
 
 setup_bbedit() {
-  title "Restoring BBEdit setings"
+  title "Restoring BBEdit settings"
   if [[ "$(uname)" == "Darwin" ]]; then
 
     target1="$HOME/Library/Application Support/BBEdit/"
@@ -376,6 +376,46 @@ setup_bbedit() {
 
     info "BBEdit configuration restored from $BACKUP_DIR1"
     info "BBedit settings restored from $BACKUP_DIR2"
+  else
+    warning "macOS not detected. Skipping."
+  fi
+}
+
+backup_pathfinder() {
+  title "Backing up PathFinder settings"
+  if [[ "$(uname)" == "Darwin" ]]; then
+
+    target1="$HOME/Library/Application Support/Path Finder/"
+    target2="$HOME/Library/Preferences/com.cocoatech.PathFinder.plist"
+
+    BACKUP_DIR1="$HOME/.config/dotfiles/pathfinder/Path Finder/"
+    BACKUP_DIR2="$HOME/.config/dotfiles/pathfinder/"
+
+    cp -pR "$target1" "$BACKUP_DIR1"
+    cp -pR "$target2" "$BACKUP_DIR2"
+
+    info "Path Finder configuration backed up to $BACKUP_DIR1"
+    info "Path Finder settings backed up to $BACKUP_DIR2"
+  else
+    warning "macOS not detected. Skipping."
+  fi
+}
+
+setup_pathfinder() {
+  title "Restoring PathFinder settings"
+  if [[ "$(uname)" == "Darwin" ]]; then
+
+    target1="$HOME/Library/Application Support/Path Finder/"
+    target2="$HOME/Library/Preferences/"
+
+    BACKUP_DIR1="$HOME/.config/dotfiles/pathfinder/Path Finder/"
+    BACKUP_DIR2="$HOME/.config/dotfiles/pathfinder/com.cocoatech.PathFinder.plist"
+
+    cp -pR "$BACKUP_DIR1" "$target1"
+    cp -pR "$BACKUP_DIR2" "$target2"
+
+    info "Path Finder configuration restored up to $BACKUP_DIR1"
+    info "Path Finder settings restored up to $BACKUP_DIR2"
   else
     warning "macOS not detected. Skipping."
   fi
@@ -396,7 +436,7 @@ setup_rust() {
     ;;
 
     [nN]* ) echo "Exiting..."; exit;;
-    * ) echo "Please answer yes or no.";;
+    * ) echo "You must answer yes or no.";;
   esac
 
 }
@@ -447,6 +487,12 @@ bbedit)
 backup_bbedit)
   backup_bbedit
   ;;
+pathfinder)
+  setup_pathfinder
+  ;;
+backup_pathfinder)
+  backup_pathfinder
+  ;;
 rust)
   setup_rust
   ;;
@@ -459,28 +505,37 @@ all)
   setup_macos
   setup_rust
   ;;
+apps)
+  setup_spell
+  setup_spam
+  setup_bbedit
+  setup_pathfinder
+  setup_rust
+  ;;
 *)
   title "Usage: $(basename "$0") {backup|clean|link|copy|git|homebrew|shell|terminfo|macos|all}"
-  echo "  backup       - backup existing symlinks and macos settings"
-  echo "  clean        - remove existing symlinks"
-  echo "  link         - create symlinks"
-  echo "  copy         - copy config files"
-  echo "  git          - setup git"
-  echo "  homebrew     - setup homebrew"
-  echo "  shell        - setup shell"
-  echo "  terminfo     - setup terminfo"
-  echo "  macos        - setup macos"
-  echo "  all          - setup everything"
+  echo "  backup            - backup existing symlinks and macos settings"
+  echo "  clean             - remove existing symlinks"
+  echo "  link              - create symlinks"
+  echo "  copy              - copy config files"
+  echo "  git               - setup git"
+  echo "  homebrew          - setup homebrew"
+  echo "  shell             - setup shell"
+  echo "  terminfo          - setup terminfo"
+  echo "  macos             - setup macos"
+  echo "  all               - setup everything"
   echo ""
-  info "Applications: $(basename "$0") {spell|spam|bbedit|rust|apps}\n"
-  echo "  spell        - restore macOS spellcheck dictionary"
-  echo "  backup_spell - backup macOS spellcheck dictionary"
-  echo "  spam         - restore SpamSieve dictionary"
-  echo "  backup_spam  - backup SpamSieve dictionary"
-  echo "  bbedit       - restore BBEdit settings"
-  echo "  backup_bb    - backup BBEdit settings"
-  echo "  rust         - setup rust toolchain"
-  echo "  apps         - setup/restore all applications"
+  info "Applications: $(basename "$0") {spell|spam|bbedit|pathfinder|rust|apps}\n"
+  echo "  spell             - restore macOS spellcheck dictionary"
+  echo "  backup_spell      - backup macOS spellcheck dictionary"
+  echo "  spam              - restore SpamSieve dictionary"
+  echo "  backup_spam       - backup SpamSieve dictionary"
+  echo "  bbedit            - restore BBEdit settings"
+  echo "  backup_bbedit     - backup BBEdit settings"
+  echo "  pathfinder        - restore PathFinder settings"
+  echo "  backup_pathfinder - backup PathFinder settings"
+  echo "  rust              - setup rust toolchain"
+  echo "  apps              - setup/restore all applications"
 
   exit 1
   ;;
