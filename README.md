@@ -29,7 +29,7 @@ Configure macOS
   https://support.apple.com/en-us/102664
 
 >
-> - Transfer or Reset
+> Transfer or Reset
 > - Empty Trash (Transfer or Reset does not!)
 > - System Settings > Transfer or Reset > Erase All Content and Settings
 > - - Alternatively boot USB installer to Recovery OS and erase Macintosh HD using Disc Utility
@@ -56,12 +56,18 @@ Configure macOS
 > - - % xcode-select --install
 > - - % git --version #(agree to Apple terms)
 > - - % ssh git@github.com # A github ssh key must be installed
-> - - % git clone git@github.com:gihrig/dotfiles.git ~/.config/dotfiles && cd ~/.config/dotfiles
-> - Create users Glen and Janis and setup Family Sharing
-> - - % ./install.sh all
+>
+> Create users Glen and Janis, setup Family Sharing then run the following commands for each user:
+> - % git clone git@github.com:gihrig/dotfiles.git ~/.config/dotfiles && cd ~/.config/dotfiles
+> - % ./install.sh all
+> - % ./install.sh apps - OR -
+> - - Install Spelling dictionary % ./install.sh spell
+> - - Install SpamSieve corpus and settings % ./install.sh spam
+> - - Install BB Edit settings - ./install.sh bbedit
+> - - Install Path Finder settings - ./install.sh pathfinder
+> - - Install Rust toolchain - ./install.sh rust
 > - Configure remaining macOS System Settings see Sequoia_Settings.txt
 > - Confirm iCloud sync for calendar and notes and contacts
-> - Install Spelling dictionary % ./install.sh spell
 > - Complete Homebrew setup requirements
 > - - brew info mysql
 > - - add to /opt/hombrew/etc/my.cnf # Use external drive for data files
@@ -79,8 +85,7 @@ Configure macOS
 > - - Create Web Search for acr http://acronymfinder.com and ety http://etymology.com
 > - - Rename Dictionary keyword as 'def'
 > - Setup Apple Mail accounts
-> - Install SpamSieve corpus and settings % ./install.sh spam
-> - - Review SpamSieve Help > Setting Up and using Spamseive
+> - Review SpamSieve Help > Setting Up and using Spamseive
 > - Setup Shortcat - Hot key CMD-Space
 > - - System Settings > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space
 > - Default folder X install license key
@@ -93,13 +98,13 @@ Configure macOS
 > - SoftRAID install license key
 > - SuperDuper configure scheduled backups to Glen-SD or Janis-SD
 > - Time Machine setup backup to Glen-TM or Janis-TM
-> - Install BB Edit settings - ./install.sh bbedit
 > - Login to Discord and Slack
 > - Import Anki Rust card deck from dotfiles/anki
 > - Configure Macs Fan Control settings (core average, controlled fan speed 45 - 70)
 > - Configure DefaultFolderX Setup favorites
 > - Configure Finder Favorites
 > - Install EMEETlink https://emeet.com/pages/software-service-downloads
+> - Restore user data from backup
 
 > - Backup Settings and keychain % .config/dotfiles/install.sh backup
 > - % .config/dotfiles/install.sh for additional backup procedures
@@ -115,7 +120,7 @@ installation.
 ```bash
 > ./install.sh help
 
-Usage: {backup|clean|link|copy|git|homebrew|shell|terminfo|macos|rust|all}
+Usage: ...
 ```
 
 See the end of this file for further details
