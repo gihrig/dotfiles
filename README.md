@@ -34,7 +34,7 @@ Configure macOS
 > - System Settings > Transfer or Reset > Erase All Content and Settings
 > - - Alternatively boot USB installer to Recovery OS and erase Macintosh HD using Disc Utility
 > - Set language and location
-> - Skip Accessibility
+> - Skip Accessibility and Migration Assistant
 > - Login or Create the Apple ID to be used with this computer
 > - Create a user account to administer this computer > Admin
 > - Use iCloud Keychain > Yes
@@ -46,18 +46,20 @@ Configure macOS
 > - Choose look > Dark (light for Janis)
 > - Keyboard Setup Assistant > Continue > ANSI US
 > - Confirm email address as needed to complete setup
-> - Create Admin user > Admin
-> - Set Machine Name (updates User and Hostname) - System Settings > General > About
+> - Set machine name - System Settings > General > About
+> - Set hostname - System Settings > General > Sharing > Local hostname
 > - Set Full Disk Access for terminal - System Settings > Privacy & Security > Full Disk Access > +
 > - Install Xcode from the App Store
 > - Copy usb key user/.ssh > user directory
 > - Open terminal and run these commands:
-> - - % sudo vifs > o > (paste macos/etc/fstab content) > ESC > ZZ
 > - - % xcode-select --install
 > - - % git --version #(agree to Apple terms)
 > - - % ssh git@github.com # A github ssh key must be installed
+> - - % git clone git@github.com:gihrig/dotfiles.git ~/.config/dotfiles && cd ~/.config/dotfiles
+> - - % sudo vifs > o > (paste macos/etc/fstab content) > ESC > ZZ (comp w/ ext drives)
+>  - Install Homebrew from https://github.com/Homebrew/brew/releases/
 >
-> Create users Glen and Janis, setup Family Sharing then run the following commands for each user:
+> After first run as Admin, create additional users, setup Family Sharing then run the following commands for each new user:
 > - % git clone git@github.com:gihrig/dotfiles.git ~/.config/dotfiles && cd ~/.config/dotfiles
 > - % ./install.sh all
 > - % ./install.sh apps - OR -
