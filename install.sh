@@ -492,6 +492,9 @@ pathfinder)
 backup_pathfinder)
   backup_pathfinder
   ;;
+rust)
+  setup_rust
+  ;;
 all)
   setup_symlinks
   setup_terminfo
@@ -499,7 +502,6 @@ all)
   setup_shell
   setup_git
   setup_macos
-  setup_rust
   ;;
 apps)
   setup_spell
