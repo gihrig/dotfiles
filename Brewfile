@@ -56,6 +56,7 @@ brew "mysql" # Open source relational database management system
 brew "node" # Node.js runtime
 brew "noti" # utility to display notifications from scripts
 ### brew "neovim" # A better vim
+tap pkgxdev/made
 brew "pkgxdev/made/pkgx" # npx, but for anything
 brew "python" # python (latest)
 cask "qlmarkdown" # Quick Look generator for Markdown files
