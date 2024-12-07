@@ -205,10 +205,9 @@ setup_homebrew() {
   title "Setting up Homebrew"
 
   if test ! "$(command -v brew)"; then
-    info "Homebrew not installed. Installing."
-    # Run as a login shell (non-interactive) so that the script doesn't pause for user input
-    # Or run installer See: https://github.com/Homebrew/brew/releases/
-    curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash --login
+    info "Homebrew is not installed."
+    echo "Download installer from https://github.com/Homebrew/brew/releases/"
+    exit 1
   fi
 
   if [ "$(uname)" == "Linux" ]; then
@@ -492,9 +491,6 @@ pathfinder)
   ;;
 backup_pathfinder)
   backup_pathfinder
-  ;;
-rust)
-  setup_rust
   ;;
 all)
   setup_symlinks
