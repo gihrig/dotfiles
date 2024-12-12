@@ -498,7 +498,6 @@ rust)
 all)
   setup_symlinks
   setup_terminfo
-  setup_homebrew
   setup_shell
   setup_git
   setup_macos
@@ -511,7 +510,7 @@ apps)
   setup_rust
   ;;
 *)
-  title "Usage: $(basename "$0") {backup|clean|link|copy|git|homebrew|shell|terminfo|macos|all}"
+  title "Usage: $(basename "$0") {backup|clean|link|copy|git|shell|terminfo|macos|homebrew|all}"
   echo "  backup            - backup existing symlinks and macos settings"
   echo "  clean             - remove existing symlinks"
   echo "  link              - create symlinks"
@@ -521,7 +520,7 @@ apps)
   echo "  shell             - setup shell"
   echo "  terminfo          - setup terminfo"
   echo "  macos             - setup macos"
-  echo "  all               - setup everything"
+  echo "  all               - setup everything for initial admin user"
   echo ""
   info "Applications: $(basename "$0") {spell|spam|bbedit|pathfinder|rust|apps}\n"
   echo "  spell             - restore macOS spellcheck dictionary"
