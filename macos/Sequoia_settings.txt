@@ -9,8 +9,8 @@ Displays >
   Color Profile > Adobe RGB (1998)
   Arrange as appropriate
 
-  Delete Old verification codes
-    Passwords > Password Options > Verification Codes > Delete After Use > On
+Delete Old verification codes
+  Passwords > AutoFil & Passwords > Verification Codes > Delete After Use > On
 
 Software Updates
   Settings > Automatic Updates > Click icon > verify all are On
@@ -43,7 +43,7 @@ Control Center
 Accessibility > Vision >
   Display >
     Autoplay animated images > Off
-    Text > Text Size > Preferred Reading Size (slider) > 14 pt
+    Text > Text Size > Custom (slider) > 14 pt
       Set your preferred reading size... > All apps > Us Preferred Reading Size
 
 Zoom >
@@ -71,9 +71,9 @@ Zoom >
       Zoomed image moves > When Pointer Reaches Edge
         behaves as "Near screen edge".
 
-Siri and Spotlight
-  Ask Siri > Off
-  Spotlight > Search results - Disable (clear)
+Siri > Siri requests > Off
+
+Spotlight > Search results - Disable (clear)
     Calculator
     Conversion
     Definition
@@ -83,7 +83,8 @@ Siri and Spotlight
     Websites
 
 Privacy and Security
-  Location Services > on
+  Location Services > On
+  Examples of previous permitted apps - option not present in Sequoia
     Firefox
     Flux
     Maps
@@ -92,7 +93,10 @@ Privacy and Security
     Analytics and Improvements > Off ?
     Apple Advertising > Personalize
 
-Network > Right Click > Set service order: Drag ethernet to top
+Network > Right Click > Set service order: Drag into order and activity
+  Ethernet > On
+  WiFi > Off
+  Thunderbolt Bridge > Off
 
 Desktop & Dock
   Minimize windows using > Scale effect
@@ -118,12 +122,14 @@ Desktop & Dock
     Prefer tabs opening documents > Always
     Ask to keep changes when closing documents > On
     Close windows when quitting an application > Off
+    Drag/Tile features > All Off
 
   Mission Control
     Automatically rearrange Spaces based on most recent use > Off
     When switching ...to a Space open window > On
     Group Windows by Application > On
     Displays have separate spaces > Off
+    Drag Windows to top of screen ... Mission Control > Off
 
     Shortcuts (Button)
       Mission Control
@@ -188,28 +194,13 @@ Lock Screen
   Turn display off when inactive > 2hr
   Require password after screen saver or display is turned off > After 4 hours
   Show large clock > Lock screen
+  Show 24-hour time > Off
+  Show user name and photo > On
   Show password hints > Off
   Show Message when locked > Off
   When Switching User >
     Login window shows > Name and password
     Show Sleep, Restart, and ShutDown buttons > On
-
-=========================================================
-
-Application notes:
-
-Terminal may be broken at this point (quits on startup)
-  1. Terminal > Settings > General > Shells open with > Command > /bin/zsh
-  2. % cd .config/dotfiles && ./install.sh all
-
-Apple Mail
-  Give SpamSieve Full Disk Access
-  Review SpamSeive > Help > Setting Up and using SpamSeive > 3 Using SpamSeive
-
-Reminders Column View
-  Reminders > Select list to view as columns (won’t work for Smart Lists) > Menu Bar View > as Columns.
-
-Create second desktop
 
 Dock
   Add Remove Arrange
@@ -225,6 +216,8 @@ Dock
   Reminders     Desktop one - Left Monitor
   Freeform      Desktop two - Left Monitor
   Messages      Desktop one - Left Monitor
+  Podcasts      Desktop one - Left Monitor
+  Music         Desktop one - Left Monitor
   Not in Dock
     VS Code     Desktop one - Left Monitor
     Numbers     Desktop one - Left Monitor
@@ -243,15 +236,28 @@ Finder
   Settings > General >
     Show these items on the desktop > clear all
     New Finder windows show > Documents
-    Open folder in tabs instead of windows > Check
+    Sync Desktop and Documents folders > Off
+    Open folder in tabs instead of windows > On
   File > New Smart Folder > + > Parameters. Folder appears on desktop
     Works like Smart Folders in Mail, but for files
     Recents - Is a Smart Folder
       For additional options press Alt/Option > Click ...
   View >
+    as List
     Show Path Bar
     Show Tab Bar
     Show Status Bar
+
+=========================================================
+
+Application notes:
+
+Terminal may be broken at this point (quits on startup)
+  1. Terminal > Settings > General > Shells open with > Command > /bin/zsh
+  2. % cd .config/dotfiles && ./install.sh all
+
+Reminders Column View
+  Reminders > Select list to view as columns (won’t work for Smart Lists) > Menu Bar View > as Columns.
 
 Interactive Widgets - on desktop
   Right-Click desktop > Edit Widgets > Drag Widget to Desktop (eg. Reminders)
