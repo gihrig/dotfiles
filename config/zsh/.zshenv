@@ -31,4 +31,4 @@ typeset -aU path
 
 export EDITOR='nano'
 export GIT_EDITOR='nano'
-. "$HOME/.cargo/env"
+[[ -f ~/.cargo/env ]] && source ~/.cargo/env
