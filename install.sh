@@ -373,8 +373,8 @@ setup_bbedit() {
     cp -pR "$BACKUP_DIR1" "$target1"
     cp -pR "$BACKUP_DIR2" "$target2"
 
-    info "BBEdit configuration restored from $BACKUP_DIR1"
-    info "BBedit settings restored from $BACKUP_DIR2"
+    info "BBEdit configuration restored to $target"
+    info "BBedit settings restored to $target2"
   else
     warning "macOS not detected. Skipping."
   fi
@@ -413,8 +413,8 @@ setup_pathfinder() {
     cp -pR "$BACKUP_DIR1" "$target1"
     cp -pR "$BACKUP_DIR2" "$target2"
 
-    info "Path Finder configuration restored up to $BACKUP_DIR1"
-    info "Path Finder settings restored up to $BACKUP_DIR2"
+    info "Path Finder configuration restored to $target1"
+    info "Path Finder settings restored to $target2"
   else
     warning "macOS not detected. Skipping."
   fi
