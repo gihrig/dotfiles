@@ -7,6 +7,7 @@
 
 > ## Note
 > This utility is designed to run on a fresh macOS install: \
+> If errors are encountered, correct the error and run the script again \
 > Things you will need:
 > - Internet connection
 > - usb key with bootable installer (optional)
@@ -34,9 +35,12 @@ Configure macOS
 > - System Settings > Transfer or Reset > Erase All Content and Settings
 > - - Alternatively boot USB installer to Recovery OS and erase Macintosh HD using Disc Utility
 > - Set language and location
+>
+> Additional user setup start here, ignore inapplicable items
+>
 > - Skip Accessibility and Migration Assistant
-> - Login or Create the Apple ID to be used with this computer
-> - Create a user account to administer this computer > Admin
+> - Login or Create the Apple ID for this user
+> - Create a user account to administer this computer > Admin 1st + others
 > - Use iCloud Keychain > Yes
 > - Enable location services > Yes
 > - Select Time Zone
@@ -45,9 +49,11 @@ Configure macOS
 > - iCloud Analytics > No
 > - Choose look > Dark (light for Janis)
 > - Keyboard Setup Assistant > Continue > ANSI US
-> - Confirm email address as needed to complete setup
 > - Set machine name - System Settings > General > About
 > - Set hostname - System Settings > General > Sharing > Local hostname
+> - - Confirm hostname in terminal
+> - - May be configured by router DHCP
+> - - % scutil --set HostName {hostname}.local as needed
 > - Set Full Disk Access for terminal - System Settings > Privacy & Security > Full Disk Access > +
 > - Install Xcode from the App Store
 > - Copy usb key user/.ssh > user directory
@@ -57,45 +63,61 @@ Configure macOS
 > - - % ssh git@github.com # A github ssh key must be installed
 > - - % git clone git@github.com:gihrig/dotfiles.git ~/.config/dotfiles && cd ~/.config/dotfiles
 > - - % sudo vifs > o > (paste macos/etc/fstab content) > ESC > ZZ (comp w/ ext drives)
->  - Install Homebrew from https://github.com/Homebrew/brew/releases/
->
-> After first run as Admin, create additional users, setup Family Sharing then run the following commands for each new user:
-> - % git clone git@github.com:gihrig/dotfiles.git ~/.config/dotfiles && cd ~/.config/dotfiles
-> - % ./install.sh all
+> - - Add subsequent users to sudoers
+> - - - % visudo (uses nano editor)
+> - - - copy root user and edit name
+> - - -
+> - Install Homebrew from https://github.com/Homebrew/brew/releases/ then
+> - - % ./install.sh hombrew
+> - - Do not reinstall homebrew. Only use admin for homebrew actions
+> - - -
+> - % ./install.sh all for admin user ./install.sh users for others
 > - % ./install.sh apps - OR -
 > - - Install Spelling dictionary % ./install.sh spell
 > - - Install SpamSieve corpus and settings % ./install.sh spam
 > - - Install BB Edit settings - ./install.sh bbedit
 > - - Install Path Finder settings - ./install.sh pathfinder
 > - - Install Rust toolchain - ./install.sh rust
-> - Configure remaining macOS System Settings see Sequoia_Settings.txt
+> - Configure remaining macOS System Settings see macos/Sequoia_Settings.txt
 > - Confirm iCloud sync for calendar and notes and contacts
+> - 1Password login and enter usb secret key
+> - Path Finder login and activate for this machine
+> - Configure Alfred
+> - - Appearance > Alfred macOS Dark
+> - - Appearance > Options > Hide Menubar Icon
+> - - Features > Web Search add
+> - - - acr Acronym Finder https://www.acronymfinder.com/{query}.html
+> - - - ety Etymology On-Line https://www.etymonline.com/index.php?allowed_in_frame=0&search={query}
+> - - Dictionary > Define a Word > 'def'
 > - Complete Homebrew setup requirements
 > - - brew info mysql
-> - - add to /opt/hombrew/etc/my.cnf # Use external drive for data files
-> - - datadir=/Volumes/iCrumzData/iCrumz/MySQLData
-> - - brew info fzf
-> - - brew info pkgx
-> - 1Password login and usb key secret key
+> - - - add to /opt/hombrew/etc/my.cnf # Use external drive for data files
+> - - - datadir=/Volumes/iCrumzData/iCrumz/MySQLData
 > - Warp login - Configure Split Tunnel
-> - Firefox login - create account as needed
-> - - Review Firefox settings
-> - - Firefox and Safari Install extensions see browser-extension-list.txt
-> - - Firefox and Safari review 1Password Extensions
-> - Configure Alfred
-> - - Hide menubar icon, Set Appearance to Alfred macOS Dark
-> - - Create Web Search for acr http://acronymfinder.com and ety http://etymology.com
-> - - Rename Dictionary keyword as 'def'
-> - Setup Apple Mail accounts
-> - Review SpamSieve Help > Setting Up and using Spamseive
 > - Setup Shortcat - Hot key CMD-Space
 > - - System Settings > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space
-> - Default folder X install license key
+> - - Launch at login > On
+> - - Show Hints > Immediately
+> - - Default to hidden panel > On
+> - Default folder X > General
+> - - Start at login > On
+> - - Enter license key
 > - Dropbox login
 > - Beyond compare install license key
 > - Setup Flux
 > - VS Code sign in to github, snyk, phind, settings, codium, docker hub
 > - Setup KeyClu - Tap and Hold CMD to activate
+> - Firefox login - create account as needed
+> - - Review Firefox settings
+> - - Firefox and Safari Install extensions see browser-extension-list.txt
+> - - Firefox and Safari review 1Password Extensions
+> - Setup Apple Mail
+> - - Privacy Protection > On (On startup screen)
+> - - Give SpamSieve Full Disk Access > Privacy & Security > Full Disk Access > +
+> - - Review SpamSeive > Help > Setting Up and using SpamSeive > 3 Using SpamSeive
+> - - Setup Mail accounts
+> - - Configure Mail UI as desired
+> - - Create Mail Rules to move messages - Admin > Epoch and Newsletters
 > - Open remaining "Third Party Apps" (see Brewfile) and configure as needed
 > - SoftRAID install license key
 > - SuperDuper configure scheduled backups to Glen-SD or Janis-SD
@@ -103,10 +125,9 @@ Configure macOS
 > - Login to Discord and Slack
 > - Import Anki Rust card deck from dotfiles/anki
 > - Configure Macs Fan Control settings (core average, controlled fan speed 45 - 70)
+> - Restore user data from backup
 > - Configure DefaultFolderX Setup favorites
 > - Configure Finder Favorites
-> - Install EMEETlink https://emeet.com/pages/software-service-downloads
-> - Restore user data from backup
 
 > - Backup Settings and keychain % .config/dotfiles/install.sh backup
 > - % .config/dotfiles/install.sh for additional backup procedures
