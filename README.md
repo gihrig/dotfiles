@@ -71,7 +71,7 @@ Configure macOS
 > - - % ./install.sh hombrew
 > - - Do not reinstall homebrew. Only use admin for homebrew actions
 > - - -
-> - % ./install.sh all for admin user ./install.sh users for others
+> - % ./install.sh all
 > - % ./install.sh apps - OR -
 > - - Install Spelling dictionary % ./install.sh spell
 > - - Install SpamSieve corpus and settings % ./install.sh spam
