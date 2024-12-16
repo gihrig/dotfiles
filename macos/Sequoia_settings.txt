@@ -10,7 +10,9 @@ Displays >
   Arrange as appropriate
 
 Delete Old verification codes
-  Passwords > AutoFil & Passwords > Verification Codes > Delete After Use > On
+  Passwords > AutoFil & Passwords > Verification Codes
+    > Delete After Use > On
+    > Set Up Code In > Off (Until 1Password is supported)
 
 Software Updates
   Settings > Automatic Updates > Click icon > verify all are On
@@ -41,6 +43,10 @@ Control Center
       Time Machine > Show in Menu Bar
 
 Accessibility > Vision >
+  Hover Text > On <-- Doesn't work in all programs
+    Info icon
+      Activity modifier > Alt/Option
+      Triple-press modifier to set activation lock > Off
   Display >
     Autoplay animated images > Off
     Text > Text Size > Custom (slider) > 14 pt
@@ -53,7 +59,7 @@ Zoom >
     Choose Display > All
   Zoom style > Advanced
     Appearance
-      Zoomed image moves > When Pointer Reaches Edge <-- Behaves as "Near ..." Research >>>>>>>>>>>>>
+      Zoomed image moves > When Pointer Reaches edge
       Disable Universal Control while zoomed in > On
       Zoom each display independently > Off
     Controls
@@ -61,15 +67,6 @@ Zoom >
     Follow Focus
       Follow keyboard focus > Always
       Move screen image when focus is > On screen edge
-  Hover Text > On <-- Doesn't work in all programs
-    Info icon
-      Activity modifier > Alt/Option
-      Triple-press modifier to set activation lock > Off
-
-    In macOS Sonoma with dual monitors:
-      System Settings > Zoom > Zoom style > Advanced > Appearance >
-      Zoomed image moves > When Pointer Reaches Edge
-        behaves as "Near screen edge".
 
 Siri > Siri requests > Off
 
@@ -81,6 +78,7 @@ Spotlight > Search results - Disable (clear)
     Other
     Siri Suggestions
     Websites
+    Search Privacy > Disable search indexing for external storage and backup drives
 
 Privacy and Security
   Location Services > On
@@ -112,6 +110,7 @@ Desktop & Dock
     Click wallpaper to reveal desktop > Only in Stage Manager
 
   Stage Manager > Off
+
   Widgets
     Show Widgets > All Off
     Widget style > Full-color
@@ -160,9 +159,9 @@ Mouse >
       Mouse Keys > Off
       icon >
         Press the option key five times to toggle Mouse Keys > On
-	Ignore built-in trackpad... Off
-	Initial delay > stop #0
-	Maximum speed > stop #12
+        Ignore built-in trackpad... Off
+        Initial delay > stop #0
+        Maximum speed > stop #12
 
 Keyboard
   Key repeat rate > Fast(est)
@@ -195,7 +194,6 @@ Lock Screen
   Require password after screen saver or display is turned off > After 4 hours
   Show large clock > Lock screen
   Show 24-hour time > Off
-  Show user name and photo > On
   Show password hints > Off
   Show Message when locked > Off
   When Switching User >
@@ -227,25 +225,30 @@ Dock
     Wezterm     Desktop one - Left Monitor
 
 Finder
-  Settings > Sidebar > Set columns to display
-  Settings > Advanced >
-    Show all filename extensions
-    Remove items from trash after 30 days
-    Keep folders on top > in windows when sorting by name
-    When performing a search > Search the current folder
   Settings > General >
     Show these items on the desktop > clear all
     New Finder windows show > Documents
     Sync Desktop and Documents folders > Off
     Open folder in tabs instead of windows > On
+  Settings > Sidebar > Set items to display
+  Settings > Advanced >
+    Show all filename extensions
+    Show warning before changing an extension > Off
+    Show warning before removing from iCloudDrive > On
+    Show warning before emptying the trash > Off
+    Remove items from trash after 30 days > On
+    Keep folders on top >
+      in windows when sorting by name > On
+      On desktop > On
+    When performing a search > Search the current folder
   File > New Smart Folder > + > Parameters. Folder appears on desktop
     Works like Smart Folders in Mail, but for files
     Recents - Is a Smart Folder
       For additional options press Alt/Option > Click ...
   View >
     as List
-    Show Path Bar
     Show Tab Bar
+    Show Path Bar
     Show Status Bar
 
 =========================================================

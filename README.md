@@ -78,8 +78,9 @@ Configure macOS
 > - - Install BB Edit settings - ./install.sh bbedit
 > - - Install Path Finder settings - ./install.sh pathfinder
 > - - Install Rust toolchain - ./install.sh rust
+> - - -
 > - Configure remaining macOS System Settings see macos/Sequoia_Settings.txt
-> - Confirm iCloud sync for calendar and notes and contacts
+> - - -
 > - 1Password login and enter usb secret key
 > - Path Finder login and activate for this machine
 > - Configure Alfred
@@ -128,6 +129,7 @@ Configure macOS
 > - Restore user data from backup
 > - Configure DefaultFolderX Setup favorites
 > - Configure Finder Favorites
+> - Confirm iCloud sync for calendar and notes and contacts
 
 > - Backup Settings and keychain % .config/dotfiles/install.sh backup
 > - % .config/dotfiles/install.sh for additional backup procedures
