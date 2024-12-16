@@ -14,6 +14,7 @@ compinit -u
 
 prepend_path /usr/local/opt/grep/libexec/gnubin
 prepend_path /usr/local/sbin
+prepend_path /usr/local/mysql/bin
 prepend_path $DOTFILES/bin
 prepend_path $HOME/bin
 

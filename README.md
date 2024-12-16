@@ -90,10 +90,6 @@ Configure macOS
 > - - - acr Acronym Finder https://www.acronymfinder.com/{query}.html
 > - - - ety Etymology On-Line https://www.etymonline.com/index.php?allowed_in_frame=0&search={query}
 > - - Dictionary > Define a Word > 'def'
-> - Complete Homebrew setup requirements
-> - - brew info mysql
-> - - - add to /opt/hombrew/etc/my.cnf # Use external drive for data files
-> - - - datadir=/Volumes/iCrumzData/iCrumz/MySQLData
 > - Warp login - Configure Split Tunnel
 > - Setup Shortcat - Hot key CMD-Space
 > - - System Settings > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space
@@ -130,6 +126,10 @@ Configure macOS
 > - Configure DefaultFolderX Setup favorites
 > - Configure Finder Favorites
 > - Confirm iCloud sync for calendar and notes and contacts
+
+> - Manual install MySQL from https://dev.mysql.com/downloads/mysql/
+> - - add to /opt/hombrew/etc/my.cnf # Use external drive for data files
+> - - datadir=/Volumes/iCrumzData/iCrumz/MySQLData
 
 > - Backup Settings and keychain % .config/dotfiles/install.sh backup
 > - % .config/dotfiles/install.sh for additional backup procedures

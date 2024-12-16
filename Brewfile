@@ -52,7 +52,7 @@ brew "lazygit" # a better git UI
 brew "llvm" # Next-gen compiler infrastructure
 brew "macchina" # pretty system info
 brew "make" # Utility for directing compilation
-brew "mysql" # Open source relational database management system
+# brew "mysql" # Open source relational DBMS >>> Manual install - Multi-user Does Not Play Well with Hombrew
 brew "node" # Node.js runtime
 brew "noti" # utility to display notifications from scripts
 ### brew "neovim" # A better vim
