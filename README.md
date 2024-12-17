@@ -33,10 +33,11 @@ Configure macOS
 > Transfer or Reset
 > - Empty Trash (Transfer or Reset does not!)
 > - System Settings > Transfer or Reset > Erase All Content and Settings
-> - - Alternatively boot USB installer to Recovery OS and erase Macintosh HD using Disc Utility
+> - - Alternatively boot USB installer to Recovery OS and erase Macintosh HD using Disc Utility then install OS
 > - Set language and location
 >
-> Additional user setup start here, ignore inapplicable items
+> Additional user setup start here, ignore inapplicable items \
+> Note that multiple user accounts and some Homebrew installs (MySQL) are often problematic
 >
 > - Skip Accessibility and Migration Assistant
 > - Login or Create the Apple ID for this user
@@ -69,7 +70,7 @@ Configure macOS
 > - - -
 > - Install Homebrew from https://github.com/Homebrew/brew/releases/ then
 > - - % ./install.sh hombrew
-> - - Do not reinstall homebrew. Only use admin for homebrew actions
+> - - Do not reinstall homebrew. Only use an admin account for homebrew actions
 > - - -
 > - % ./install.sh all
 > - % ./install.sh apps - OR -
