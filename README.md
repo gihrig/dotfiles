@@ -69,11 +69,11 @@ Configure macOS
 > - - - copy root user and edit name
 > - - -
 > - Install Homebrew from https://github.com/Homebrew/brew/releases/ then
-> - - % ./install.sh hombrew
 > - - Do not reinstall homebrew. Only use an admin account for homebrew actions
 > - - -
 > - % ./install.sh all
 > - % ./install.sh apps - OR -
+> - - Install apps with Hombrew % ./install.sh hombrew
 > - - Install Spelling dictionary % ./install.sh spell
 > - - Install SpamSieve corpus and settings % ./install.sh spam
 > - - Install BB Edit settings - ./install.sh bbedit
@@ -159,7 +159,7 @@ Generally, this is the command to use for a new installation
 ```
 
 The `all` command runs all of the installation tasks described below, in full, with
-the exception of the `backup` script. You must run that one manually.
+the exception of `backup`, `clean` and `apps`. You must run those individually.
 
 ### `backup`
 

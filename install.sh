@@ -202,7 +202,7 @@ setup_git() {
 }
 
 setup_homebrew() {
-  title "Setting up Homebrew"
+  title "Installing Apps with Homebrew"
 
   if test ! "$(command -v brew)"; then
     info "Homebrew is not installed."
@@ -501,8 +501,9 @@ all)
   setup_shell
   setup_git
   setup_macos
-  ;;
+    ;;
 apps)
+  setup_homebrew
   setup_spell
   setup_spam
   setup_bbedit
@@ -510,19 +511,19 @@ apps)
   setup_rust
   ;;
 *)
-  title "Usage: $(basename "$0") {backup|clean|link|copy|git|shell|terminfo|macos|homebrew|all}"
+  title "Usage: $(basename "$0") {backup|clean|link|copy|git|shell|terminfo|macos|all}"
   echo "  backup            - backup existing symlinks and macos settings"
   echo "  clean             - remove existing symlinks"
   echo "  link              - create symlinks"
   echo "  copy              - copy config files"
   echo "  git               - setup git"
-  echo "  homebrew          - setup homebrew"
   echo "  shell             - setup shell"
   echo "  terminfo          - setup terminfo"
   echo "  macos             - setup macos"
-  echo "  all               - setup everything for initial admin user"
+  echo "  all               - setup everything but apps"
   echo ""
-  info "Applications: $(basename "$0") {spell|spam|bbedit|pathfinder|rust|apps}\n"
+  info "Applications: $(basename "$0") {spell|spam|bbedit|pathfinder|homebrew|rust|apps}\n"
+  echo "  homebrew          - install apps with homebrew"
   echo "  spell             - restore macOS spellcheck dictionary"
   echo "  backup_spell      - backup macOS spellcheck dictionary"
   echo "  spam              - restore SpamSieve dictionary"
