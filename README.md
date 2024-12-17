@@ -74,6 +74,7 @@ Configure macOS
 > - % ./install.sh all
 > - % ./install.sh apps - OR -
 > - - Install apps with Hombrew % ./install.sh hombrew
+> - - - Install wil stop at any error. Just run ./install.sh hombrew again
 > - - Install Spelling dictionary % ./install.sh spell
 > - - Install SpamSieve corpus and settings % ./install.sh spam
 > - - Install BB Edit settings - ./install.sh bbedit
@@ -93,9 +94,10 @@ Configure macOS
 > - - Dictionary > Define a Word > 'def'
 > - Warp login - Configure Split Tunnel
 > - Setup Shortcat - Hot key CMD-Space
-> - - System Settings > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space
+> - - System Settings > Keyboard Accessibility > Keyboard > Keyboard Shortcuts > Spotlight > Show Spotlight search > Ctrl-Space
 > - - Launch at login > On
 > - - Show Hints > Immediately
+> - - Arrow/Scroll keys ? Space + IJKL - arrow-style
 > - - Default to hidden panel > On
 > - Default folder X > General
 > - - Start at login > On
@@ -103,8 +105,8 @@ Configure macOS
 > - Dropbox login
 > - Beyond compare install license key
 > - Setup Flux
-> - VS Code sign in to github, snyk, phind, settings, codium, docker hub
 > - Setup KeyClu - Tap and Hold CMD to activate
+> - VS Code sign in to github, snyk, phind, settings, codium, docker hub
 > - Firefox login - create account as needed
 > - - Review Firefox settings
 > - - Firefox and Safari Install extensions see browser-extension-list.txt

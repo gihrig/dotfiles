@@ -153,15 +153,15 @@ Mouse >
   Advanced > Pointer acceleration > On
   Setup Bluetooth mouse > Pair (or use transceiver)
 
-  Mouse Keys > Pointer Control >
-    Mouse and Trackpad > Spring-loading > Off
-    Alternate control methods >
-      Mouse Keys > Off
-      icon >
-        Press the option key five times to toggle Mouse Keys > On
-        Ignore built-in trackpad... Off
-        Initial delay > stop #0
-        Maximum speed > stop #12
+Mouse Keys > Pointer Control >
+  Mouse and Trackpad > Spring-loading > Off
+  Alternate control methods >
+    Mouse Keys > Off
+    icon >
+      Press the option key five times to toggle Mouse Keys > On
+      Ignore built-in trackpad... Off
+      Initial delay > stop #0
+      Maximum speed > stop #12
 
 Keyboard
   Key repeat rate > Fast(est)
@@ -194,6 +194,7 @@ Lock Screen
   Require password after screen saver or display is turned off > After 4 hours
   Show large clock > Lock screen
   Show 24-hour time > Off
+  Show user name and photo > On
   Show password hints > Off
   Show Message when locked > Off
   When Switching User >
