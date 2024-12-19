@@ -106,11 +106,11 @@ Configure macOS
 > - Beyond compare install license key
 > - Setup Flux
 > - Setup KeyClu - Tap and Hold CMD to activate
-> - VS Code sign in to github, snyk, phind, settings, codium, docker hub
 > - Firefox login - create account as needed
 > - - Review Firefox settings
 > - - Firefox and Safari Install extensions see browser-extension-list.txt
 > - - Firefox and Safari review 1Password Extensions
+> - Login to Messages and FaceTime
 > - Setup Apple Mail
 > - - Privacy Protection > On (On startup screen)
 > - - Give SpamSieve Full Disk Access > Privacy & Security > Full Disk Access > +
@@ -118,6 +118,7 @@ Configure macOS
 > - - Setup Mail accounts
 > - - Configure Mail UI as desired
 > - - Create Mail Rules to move messages - Admin > Epoch and Newsletters
+> - VS Code sign in to github, snyk, phind, settings, codium, docker hub
 > - Open remaining "Third Party Apps" (see Brewfile) and configure as needed
 > - SoftRAID install license key
 > - SuperDuper configure scheduled backups to Glen-SD or Janis-SD
