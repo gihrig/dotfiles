@@ -136,7 +136,6 @@ Configure macOS
 > - - datadir=/Volumes/iCrumzData/iCrumz/MySQLData
 
 > - Backup Settings and keychain % .config/dotfiles/install.sh backup
-> - % .config/dotfiles/install.sh for additional backup procedures
 
 ## Note
 >

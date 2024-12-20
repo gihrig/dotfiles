@@ -100,7 +100,8 @@ function exportDefaults {
     local timed="$((SECONDS / 3600))hrs $(((SECONDS / 60) % 60))min $((SECONDS % 60))sec"
 
     echo "Exported $filestotal files in $timed to $outdir"
-    echo "Copy defaults.zip to dotfiles/macos for import"
+    echo ""
+    echo "Copy ~/dotfiles-defaults/defaults.zip to ~/.config/dotfiles/macos for future import"
     echo ""
 }
 

@@ -3,6 +3,7 @@
 # Prevent system sleep while script is running
 caffeinate -i -w $$ &
 
+cd ~/.config/dotfiles
 DOTFILES="$(pwd)"
 COLOR_GRAY="\033[1;38;5;243m"
 COLOR_BLUE="\033[1;34m"
