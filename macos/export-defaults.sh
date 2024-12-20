@@ -101,7 +101,7 @@ function exportDefaults {
 
     echo "Exported $filestotal files in $timed to $outdir"
     echo ""
-    echo "Copy ~/dotfiles-defaults/defaults.zip to ~/.config/dotfiles/macos for future import"
+    echo "Copy $HOME/dotfiles-defaults/defaults.zip to $HOME/.config/dotfiles/macos for future import"
     echo ""
 }
 
