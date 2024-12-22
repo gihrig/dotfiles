@@ -10,8 +10,9 @@ Displays >
   Arrange as appropriate
 
 Delete Old verification codes
-  Passwords > AutoFil & Passwords > Verification Codes
-    > Delete After Use > On
+  Passwords > AutoFil & Passwords
+    > AutoFill Passwords and Passkeys > Off
+    > Verification Codes > Delete After Use > On
     > Set Up Code In > Off (Until 1Password is supported)
 
 Software Updates
