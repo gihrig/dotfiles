@@ -74,7 +74,9 @@ Configure macOS
 > - % ./install.sh all
 > - % ./install.sh apps - OR -
 > - - Install apps with Hombrew % ./install.sh hombrew
+> - - -
 > - - - Install will stop at any error. Just run ./install.sh hombrew again
+> - - -
 > - - Install Spelling dictionary % ./install.sh spell
 > - - Install SpamSieve corpus and settings % ./install.sh spam
 > - - Install BB Edit settings - ./install.sh bbedit
