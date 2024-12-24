@@ -126,18 +126,21 @@ Configure macOS
 > - SuperDuper configure scheduled backups to Glen-SD or Janis-SD
 > - Time Machine setup backup to Glen-TM or Janis-TM
 > - Login to Discord and Slack
-> - Import Anki Rust card deck from dotfiles/anki
 > - Configure Macs Fan Control settings (core average, controlled fan speed 45 - 70)
 > - Restore user data from backup
 > - Configure DefaultFolderX Setup favorites
 > - Configure Finder Favorites
 > - Confirm iCloud sync for calendar and notes and contacts
+> - Import Anki Rust card deck from dotfiles/anki
+> - Import Spell Check words into VS Code
 
 > - Manual install MySQL from https://dev.mysql.com/downloads/mysql/
 > - - add to /opt/hombrew/etc/my.cnf # Use external drive for data files
 > - - datadir=/Volumes/iCrumzData/iCrumz/MySQLData
 
 > - Backup Settings and keychain % .config/dotfiles/install.sh backup
+
+> - Review Apple accounts for recovery methods
 
 ## Note
 >
