@@ -123,8 +123,6 @@ Configure macOS
 > - VS Code sign in to github, snyk, phind, settings, codium, docker hub
 > - Open remaining "Third Party Apps" (see Brewfile) and configure as needed
 > - SoftRAID install license key
-> - SuperDuper configure scheduled backups to Glen-SD or Janis-SD
-> - Time Machine setup backup to Glen-TM or Janis-TM
 > - Login to Discord and Slack
 > - Configure Macs Fan Control settings (core average, controlled fan speed 45 - 70)
 > - Restore user data from backup
@@ -138,6 +136,8 @@ Configure macOS
 > - - add to /opt/hombrew/etc/my.cnf # Use external drive for data files
 > - - datadir=/Volumes/iCrumzData/iCrumz/MySQLData
 
+> - SuperDuper configure scheduled backups to Glen-SD or Janis-SD
+> - Time Machine setup backup to Glen-TM or Janis-TM
 > - Backup Settings and keychain % .config/dotfiles/install.sh backup
 
 > - Review Apple accounts for recovery methods
