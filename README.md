@@ -140,7 +140,15 @@ Configure macOS
 > - Time Machine setup backup to Glen-TM or Janis-TM
 > - Backup Settings and keychain % .config/dotfiles/install.sh backup
 
-> - Review Apple accounts for recovery methods
+> - √ Complete Rust checkout
+> - √ Migrate Admin user to M2
+> - √ Restore Janis-Mac
+> - Distribute Janis' data
+> - Install ebooks and DnD on Janis-Mac
+> - √ Configure Janis-Mac backups
+> - √ Sort out contact duplicates and sharing
+> - √ Review Apple accounts for recovery methods (info@arkadias.com needs imessage)
+> - Repair/Clean up Thunder Bay drives
 
 ## Note
 >
