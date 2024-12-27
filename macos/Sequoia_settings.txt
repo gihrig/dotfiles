@@ -18,6 +18,14 @@ Delete Old verification codes
 Software Updates
   Settings > Automatic Updates > Click icon > verify all are On
 
+Energy
+  Low power mode > Off (M chips only)
+  Prevent automatic sleeping when display is off > On
+  Enable Power Nap > On
+  Put hard disks to sleep > Off
+  Wake for network access > On
+  Start up automatically after power failure >
+
 Notifications > Show previews > Always
 
 Appearance >
@@ -42,6 +50,8 @@ Control Center
       Spotlight > Don't Show in Menu Bar
       Siri > Don't Show in Menu Bar
       Time Machine > Show in Menu Bar
+  Other modules
+    Accessibility Shortcuts > Show in Control Center > On
 
 Accessibility > Vision >
   Hover Text > On <-- Doesn't work in all programs
@@ -169,6 +179,7 @@ Keyboard
   Delay until repeat > Short(est)
   Press fn key to > Do Nothing
   Keyboard Navigation > On
+  Keyboard Shortcuts > Spotlight > Show Finder search > Ctrl-Shft-Spc
   Text Input > Edit >
     Show Input menu in menu bar > Off
     Correct Spelling automatically > Off
