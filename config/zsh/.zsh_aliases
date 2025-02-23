@@ -80,6 +80,25 @@ alias stats='git diff --stat HEAD^ HEAD'
 
 alias sqlite='sqlite3'
 
+alias dev="cargo leptos watch"
+alias release="cargo leptos build --release"
 alias e2e-test='cargo leptos end-to-end'
 alias e2e-release='cargo leptos end-to-end --release'
 alias e2e-report='open ./end2end/playwright-report/index.html'
+alias lfmt='leptosfmt ./**/*.rs'
+start() {
+    # Get the project name from current directory
+    local proj_name=$(basename "$PWD")
+
+    # Construct and execute the command
+    ./target/release/$proj_name "$@"
+}
+listening() {
+    if [ $# -eq 0 ]; then
+        sudo lsof -iTCP -sTCP:LISTEN -n -P
+    elif [ $# -eq 1 ]; then
+        sudo lsof -iTCP -sTCP:LISTEN -n -P | grep -i --color $1
+    else
+        echo "Usage: listening [pattern]"
+    fi
+}

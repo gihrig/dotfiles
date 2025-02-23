@@ -78,8 +78,12 @@ Zoom >
     Follow Focus
       Follow keyboard focus > Always
       Move screen image when focus is > On screen edge
+      Move screen image > Just enough to show focus item
+      Movement speed > stop #6
 
 Siri > Siri requests > Off
+
+
 
 Spotlight > Search results - Disable (clear)
     Calculator
