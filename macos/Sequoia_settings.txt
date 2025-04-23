@@ -76,7 +76,7 @@ Zoom >
     Controls
       Use keyboard shortcuts to adjust zoom window > On
     Follow Focus
-      Follow keyboard focus > Always
+      Follow keyboard focus > Never
       Move screen image when focus is > On screen edge
       Move screen image > Just enough to show focus item
       Movement speed > stop #6
