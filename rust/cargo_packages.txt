@@ -3,6 +3,7 @@ cargo-all-features
 cargo-audit
 cargo-edit
 cargo-expand
+cargo-geiger
 cargo-generate
 cargo-leptos
 cargo-make
