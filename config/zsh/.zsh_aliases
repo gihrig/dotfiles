@@ -1,5 +1,8 @@
 #!/usr/bin/env zsh
 
+# Dump aliases
+alias aliases="cat ~/.config/dotfiles/config/zsh/.zsh_aliases"
+
 # reload zsh config
 alias reload!="RELOAD=1 source $XDG_CONFIG_HOME/zsh/.zshrc"
 
@@ -86,6 +89,8 @@ alias e2e-test='cargo leptos end-to-end'
 alias e2e-release='cargo leptos end-to-end --release'
 alias e2e-report='open ./end2end/playwright-report/index.html'
 alias lfmt='leptosfmt ./**/*.rs'
+
+# Start project after 'release' build from project root
 start() {
     # Get the project name from current directory
     local proj_name=$(basename "$PWD")
@@ -93,6 +98,8 @@ start() {
     # Construct and execute the command
     ./target/release/$proj_name "$@"
 }
+
+# List all listening ports
 listening() {
     if [ $# -eq 0 ]; then
         sudo lsof -iTCP -sTCP:LISTEN -n -P
