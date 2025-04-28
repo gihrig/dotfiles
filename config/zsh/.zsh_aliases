@@ -90,6 +90,11 @@ alias e2e-release='cargo leptos end-to-end --release'
 alias e2e-report='open ./end2end/playwright-report/index.html'
 alias lfmt='leptosfmt ./**/*.rs'
 
+# Cargo watch example files
+cwe() {
+  cargo watch -c -q -x "run --example $1"
+}
+
 # Start project after 'release' build from project root
 start() {
     # Get the project name from current directory
