@@ -80,6 +80,12 @@ Zoom >
       Move screen image when focus is > On screen edge
       Move screen image > Just enough to show focus item
       Movement speed > stop #6
+    Shortcuts 
+      Toggle between full screen... > Off
+      Modifiers for Temporary Actions
+        Toggle zoom > CTRL ALT > On
+        Detach zoom view... > Off
+        Disable panning > Off
 
 Siri > Siri requests > Off
 
@@ -173,7 +179,7 @@ Mouse Keys > Pointer Control >
   Alternate control methods >
     Mouse Keys > Off
     icon >
-      Press the option key five times to toggle Mouse Keys > On
+      Press the option key five times to toggle Mouse Keys > Off
       Ignore built-in trackpad... Off
       Initial delay > stop #0
       Maximum speed > stop #12
