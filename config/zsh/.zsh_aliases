@@ -90,6 +90,16 @@ alias e2e-release='cargo leptos end-to-end --release'
 alias e2e-report='open ./end2end/playwright-report/index.html'
 alias lfmt='leptosfmt ./**/*.rs'
 
+# See root cargo.toml [workspace.lints.clippy] table for project-wide rules
+#  Flags Explained:
+#  
+#      --workspace: Ensures Clippy checks all crates in the workspace.
+#      --all-targets: Checks all targets, including tests, examples, and benches.
+#      --all-features: Enables all features to ensure comprehensive linting.
+#      -- -D: enforce warnings as errors (could use "deny"
+
+alias clippy="cargo clippy --workspace --all-targets"
+
 # Cargo watch example files
 cwe() {
   cargo watch -c -q -x "run --example $1"
