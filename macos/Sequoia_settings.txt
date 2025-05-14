@@ -189,7 +189,14 @@ Keyboard
   Delay until repeat > Short(est)
   Press fn key to > Do Nothing
   Keyboard Navigation > On
-  Keyboard Shortcuts > Spotlight > Show Finder search > Ctrl-Shft-Spc
+  Keyboard Shortcuts > 
+    Spotlight > 
+      Show Spotlight search > Ctrl-Shft-Spc
+      Show Finder search > Ctrl-Alt-Shft-Spc
+    Input Sources >
+      Select the previous input source > Off
+      Select the next input source > Off
+      
   Text Input > Edit >
     Show Input menu in menu bar > Off
     Correct Spelling automatically > Off
