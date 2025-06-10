@@ -8,7 +8,7 @@ cargo-generate
 cargo-leptos
 cargo-make
 cargo-modules
-carg-nextest
+cargo-nextest
 cargo-script
 cargo-udeps
 cargo-update

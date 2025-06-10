@@ -101,11 +101,10 @@ cask "firefox"
 cask "flux"
 cask "gitup"
 cask "imageoptim"
-cask "keyclu" # Show keyboard shortcuts
+cask "inkscape" # svg editor
 cask "macs-fan-control"
 cask "path-finder"
 cask "sequel-ace"
-cask "shortcat" # control macOS using the keyboard only
 cask "slack"
 cask "softraid"
 cask "spamsieve"
