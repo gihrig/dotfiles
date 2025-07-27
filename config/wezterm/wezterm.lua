@@ -32,6 +32,7 @@ config.keys = {
 	{ mods = "CMD|OPT", key = "RightArrow", action = act.ActivateTabRelative(1) },
 	{ mods = "CMD|SHIFT", key = "LeftArrow", action = act.ActivateTabRelative(-1) },
 	{ mods = "CMD|SHIFT", key = "RightArrow", action = act.ActivateTabRelative(1) },
+	{ mods = "SHIFT", key = "Enter", action = act.Multiple { act.SendString "\\", act.SendKey { key = "Enter" }, }, },
 }
 
 config.harfbuzz_features = { "calt", "dlig", "clig=1", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08" }
