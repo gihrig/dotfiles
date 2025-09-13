@@ -145,6 +145,7 @@
     pager = delta
     editor = nano
     whitespace = cr-at-eol
+	hooksPath = /Users/glen/Library/Application Support/ggshield/git-hooks
 [delta]
     features = unobtrusive-line-numbers decorations
     whitespace-error-style = 22 reverse
