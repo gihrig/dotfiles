@@ -163,3 +163,5 @@ done
 
 # If a ~/.profile exists, source it
 [[ -f ~/.profile ]] && source ~/.profile
+
+alias claude="/Users/glen/.claude/local/claude"
