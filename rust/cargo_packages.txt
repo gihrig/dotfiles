@@ -1,6 +1,7 @@
 bunyan
 cargo-all-features
 cargo-audit
+cargo-binstall
 cargo-edit
 cargo-expand
 cargo-geiger
