@@ -102,9 +102,11 @@ zfetch Aloxaf/fzf-tab
 # Setup fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-if [[ -x "$(command -v fnm)" ]]; then
-    eval "$(fnm env --use-on-cd)"
-fi
+# Check node engines requirement against installed node version
+### Fails when node is installed using Homebrew
+# if [[ -x "$(command -v fnm)" ]]; then
+#     eval "$(fnm env --use-on-cd)"
+# fi
 
 [[ -e ~/.terminfo ]] && export TERMINFO_DIRS=~/.terminfo:/usr/share/terminfo
 
