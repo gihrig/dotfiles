@@ -146,6 +146,7 @@
     editor = nano
     whitespace = cr-at-eol
 	hooksPath = /Users/glen/Library/Application Support/ggshield/git-hooks
+	excludesfile = /Users/glen/.gitignore_global
 [delta]
     features = unobtrusive-line-numbers decorations
     whitespace-error-style = 22 reverse
