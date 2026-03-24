@@ -40,9 +40,10 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # fi
 
 # ---------------------------------------------------------------------------
+# Data
+# ---------------------------------------------------------------------------
 
 LOG_FILE="/Users/glen/logs/sync.log"
-
 SOURCES=("Glen-DATA"   "Janis-DATA"   "iCrumz-DATA")
 DESTS=(  "Glen-DATAb"  "Janis-DATAb"  "iCrumz-DATAb")
 EXCLUDES=(".Spotlight-V100" ".Trashes" ".TemporaryItems")
@@ -70,12 +71,13 @@ mount_volume() {
     fi
 }
 
-eject_volume() {
+unmount_volume() {
+    # diskutil eject affects all volumes in RAID 1 set
     local vol="$1"
-    if diskutil eject "$vol" >> "$LOG_FILE" 2>&1; then
-        log "  Ejected $vol"
+    if diskutil unmount "$vol" >> "$LOG_FILE" 2>&1; then
+        log "  Unmounted $vol"
     else
-        log "  WARNING: Could not eject $vol (may already be unmounted)"
+        log "  WARNING: Could not unmount $vol (may already be unmounted)"
     fi
 }
 
@@ -120,12 +122,16 @@ for i in $(seq 1 ${#SOURCES[@]}); do
     fi
 done
 
+# ---------------------------------------------------------------------------
+# Cleanup
+# ---------------------------------------------------------------------------
+
 log ""
-log "--- Restoring volumes to stable state ---"
-eject_volume "/dev/disk11"
-eject_volume "/dev/disk10"
-mount_volume "Glen-TM1"
-mount_volume "Glen-TM2"
+log "--- Unmounting volumes ---"
+for i in $(seq 1 ${#SOURCES[@]}); do
+    unmount_volume "${SOURCES[$i]}"
+    unmount_volume "${DESTS[$i]}"
+done
 
 log ""
 log "=== Sync completed ==="
