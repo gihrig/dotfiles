@@ -34,3 +34,6 @@ export GIT_EDITOR='nano'
 [[ -f ~/.cargo/env ]] && source ~/.cargo/env
 
 source "$HOME/.aipack-base/bin/aip-env"
+
+# Vite+ bin (https://viteplus.dev)
+. "$HOME/.vite-plus/env"
