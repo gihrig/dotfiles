@@ -103,6 +103,7 @@ Spotlight > Search results - Disable (clear)
 
 Privacy and Security
   Location Services > On
+  Developer Tools > Add WezTerm (speeds up rust build?)
   Examples of previous permitted apps - option not present in Sequoia
     Firefox
     Flux
