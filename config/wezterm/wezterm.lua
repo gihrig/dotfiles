@@ -39,6 +39,7 @@ config.harfbuzz_features = { "calt", "dlig", "clig=1", "ss01", "ss02", "ss03", "
 config.font_size = 16
 config.line_height = 1.1
 config.adjust_window_size_when_changing_font_size = false
+automatically_reload_config = true
 
 -- keys config
 config.send_composed_key_when_left_alt_is_pressed = true
