@@ -14,7 +14,7 @@ export DOTFILES="$(dirname "$(dirname "$(dirname "$(readlink "${(%):-%N}")")")")
 export CACHEDIR="$HOME/.local/share"
 export VIM_TMP="$HOME/.vim-tmp"
 # add a config file for ripgrep
-export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
+export RIPGREP_CONFIG_PATH="/opt/homebrew/bin/rg"
 
 [[ -d "$CACHEDIR" ]] || mkdir -p "$CACHEDIR"
 [[ -d "$VIM_TMP" ]] || mkdir -p "$VIM_TMP"
@@ -37,3 +37,6 @@ source "$HOME/.aipack-base/bin/aip-env"
 
 # Vite+ bin (https://viteplus.dev)
 . "$HOME/.vite-plus/env"
+
+# Claude Code
+export CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING=1
