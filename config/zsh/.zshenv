@@ -32,6 +32,7 @@ typeset -aU path
 export EDITOR='nano'
 export GIT_EDITOR='nano'
 [[ -f ~/.cargo/env ]] && source ~/.cargo/env
+export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 
 source "$HOME/.aipack-base/bin/aip-env"
 
