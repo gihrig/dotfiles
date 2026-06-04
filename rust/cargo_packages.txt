@@ -10,7 +10,7 @@ cargo-leptos
 cargo-make
 cargo-modules
 cargo-nextest
-cargo-script
+cargo-run
 cargo-udeps
 cargo-update
 cargo-watch
