@@ -103,6 +103,7 @@ cask "gitup"
 cask "imageoptim"
 cask "inkscape" # svg editor
 cask "macs-fan-control"
+cask "mouseless"
 cask "path-finder"
 cask "sequel-ace"
 cask "slack"
