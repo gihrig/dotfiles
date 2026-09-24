@@ -21,8 +21,8 @@ alias lpath='echo $PATH | tr ":" "\n"' # list the PATH separated by new lines
 
 # Applications
 alias ios='open -a /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
-alias claude="claude --model claude-opus-4-8 --effort high"
-alias claude-max="claude --model claude-opus-4-8 --effort max"
+alias claude="claude --model claude-opus-5-5 --effort high"
+alias claude-max="claude --model claude-opus-5-5 --effort max"
 
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
@@ -94,7 +94,7 @@ alias lfmt='leptosfmt ./**/*.rs'
 
 # See root cargo.toml [workspace.lints.clippy] table for project-wide rules
 #  Flags Explained:
-#  
+#
 #      --workspace: Ensures Clippy checks all crates in the workspace.
 #      --all-targets: Checks all targets, including tests, examples, and benches.
 #      --all-features: Enables all features to ensure comprehensive linting.
