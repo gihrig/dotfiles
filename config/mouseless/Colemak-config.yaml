@@ -35,7 +35,7 @@ excluded_input_devices: []
 general_settings:
   automatically_check_for_updates: true
   check_for_preview_releases: false
-  hide_welcome_screen: false
+  hide_welcome_screen: true
   ignore_update_to_version: null
 grid_configs:
 - always_show_subgrid: false
@@ -55,7 +55,7 @@ grid_configs:
     keys: ''
     num_cells_x: 2
     num_cells_y: 1
-  hold_subgrid_key_for_nudge: false
+  hold_subgrid_key_for_nudge: true
   name: position_based_columns
   nudges_per_cell: 4
   strategy: subgrid
@@ -311,9 +311,9 @@ keymaps:
     hold for right button: CommandRight
     hold for speed decrease: A
     hold for speed increase:
+    - R
     - S
-    - D
-    - F
+    - T
     increase overlay opacity: ArrowUp
     invert colors: '5'
     jump to bottom: null
@@ -326,10 +326,10 @@ keymaps:
     middle click: null
     middle mouse button: E
     middle mouse button (w/o overlay): null
-    move down: K
-    move left: J
-    move right: L
-    move up: I
+    move down: E
+    move left: N
+    move right: I
+    move up: U
     release hold/drag: Escape
     repeat last mouse action: null
     right click: null
@@ -353,11 +353,11 @@ keymaps:
     toggle app enabled: null
     toggle continuous mode: null
     toggle continuous mode until closed: '1'
-    toggle free mode: OptionLeft tap
-    toggle overlay: null
+    toggle free mode: CommandRight tap
+    toggle overlay: CommandLeft tap
     toggle overlay lock: null
     undo last key: Backspace
-    wheel down: ','
+    wheel down: K
     wheel down fast: null
     wheel left: .
     wheel left fast: null
@@ -437,7 +437,7 @@ style_configs:
   - 0.32
   - 0.7
   cursor_size: 7
-  font_family: Verdana
+  font_family: TamilSangamMN-Bold
   font_size_multiplier: 0.7
   font_weight: 500
   free_mode_indicator_offset_x: 20.0
@@ -491,4 +491,4 @@ style_configs:
   text_y_offset: 0.0
   toast_opacity: 0.5
   use_bg_color_transforms: false
-  window_opacity: 0.8
+  window_opacity: 0.6
